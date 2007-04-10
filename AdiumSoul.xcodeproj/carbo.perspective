@@ -267,12 +267,12 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>9</integer>
-									<integer>8</integer>
+									<integer>1</integer>
+									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 0}, {185, 724}}</string>
+							<string>{{0, 0}, {185, 722}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -282,14 +282,14 @@
 					<key>GeometryConfiguration</key>
 					<dict>
 						<key>Frame</key>
-						<string>{{0, 0}, {202, 742}}</string>
+						<string>{{0, 0}, {202, 740}}</string>
 						<key>GroupTreeTableConfiguration</key>
 						<array>
 							<string>MainColumn</string>
 							<real>185</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>4 95 686 783 0 0 1440 878 </string>
+						<string>4 97 727 781 0 0 1440 878 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -317,11 +317,12 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>26BF394F0BCBD0CF0099C37C</string>
+										<string>26BF39610BCBD1E10099C37C</string>
 										<key>history</key>
 										<array>
-											<string>26BF39470BCBD0570099C37C</string>
-											<string>26BF39480BCBD0570099C37C</string>
+											<string>26BF39530BCBD1E10099C37C</string>
+											<string>26BF39540BCBD1E10099C37C</string>
+											<string>26BF39550BCBD1E10099C37C</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -329,6 +330,17 @@
 											<string>26BF387A0BCBBF890099C37C</string>
 											<string>26BF39490BCBD0570099C37C</string>
 											<string>26BF394A0BCBD0570099C37C</string>
+											<string>26BF39560BCBD1E10099C37C</string>
+											<string>26BF39570BCBD1E10099C37C</string>
+											<string>26BF39580BCBD1E10099C37C</string>
+											<string>26BF39590BCBD1E10099C37C</string>
+											<string>26BF395A0BCBD1E10099C37C</string>
+											<string>26BF395B0BCBD1E10099C37C</string>
+											<string>26BF395C0BCBD1E10099C37C</string>
+											<string>26BF395D0BCBD1E10099C37C</string>
+											<string>26BF395E0BCBD1E10099C37C</string>
+											<string>26BF395F0BCBD1E10099C37C</string>
+											<string>26BF39600BCBD1E10099C37C</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -342,14 +354,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {479, 516}}</string>
+								<string>{{0, 0}, {520, 514}}</string>
 								<key>RubberWindowFrame</key>
-								<string>4 95 686 783 0 0 1440 878 </string>
+								<string>4 97 727 781 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>516pt</string>
+							<string>514pt</string>
 						</dict>
 						<dict>
 							<key>Proportion</key>
@@ -367,9 +379,9 @@
 									<key>GeometryConfiguration</key>
 									<dict>
 										<key>Frame</key>
-										<string>{{10, 27}, {479, 194}}</string>
+										<string>{{10, 27}, {520, 194}}</string>
 										<key>RubberWindowFrame</key>
-										<string>4 95 686 783 0 0 1440 878 </string>
+										<string>4 97 727 781 0 0 1440 878 </string>
 									</dict>
 									<key>Module</key>
 									<string>XCDetailModule</string>
@@ -410,7 +422,7 @@
 						</dict>
 					</array>
 					<key>Proportion</key>
-					<string>479pt</string>
+					<string>520pt</string>
 				</dict>
 			</array>
 			<key>Name</key>
@@ -828,7 +840,7 @@
 		<string>/Users/carbo/rendu/Projets/adiumsoul/branches/0.1/AdiumSoul.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>4 95 686 783 0 0 1440 878 </string>
+	<string>4 97 727 781 0 0 1440 878 </string>
 	<key>WindowTools</key>
 	<array>
 		<dict>
