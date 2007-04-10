@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		267B39100BCBBCEB00E8B1C9 /* NLXAdiumSoul.m in Sources */ = {isa = PBXBuildFile; fileRef = 267B390F0BCBBCEB00E8B1C9 /* NLXAdiumSoul.m */; };
+		26BF398E0BCBD4C40099C37C /* NLXNetSoulService.m in Sources */ = {isa = PBXBuildFile; fileRef = 26BF396E0BCBD3010099C37C /* NLXNetSoulService.m */; };
+		26BF39CC0BCBD6C60099C37C /* NLXNetSoulAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 26BF39790BCBD36C0099C37C /* NLXNetSoulAccount.m */; };
+		26BF39CD0BCBD6C80099C37C /* NLXNetSoulAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26BF39800BCBD3BE0099C37C /* NLXNetSoulAccountViewController.m */; };
 		26FE47B10BCBBA7200333E55 /* Adium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26FE47AE0BCBBA7200333E55 /* Adium.framework */; };
 		26FE47B20BCBBA7200333E55 /* AIUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26FE47AF0BCBBA7200333E55 /* AIUtilities.framework */; };
 		26FE47B30BCBBA7200333E55 /* FriBidi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26FE47B00BCBBA7200333E55 /* FriBidi.framework */; };
@@ -22,8 +25,12 @@
 		1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		267B390E0BCBBCEB00E8B1C9 /* NLXAdiumSoul.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NLXAdiumSoul.h; path = sources/NLXAdiumSoul.h; sourceTree = "<group>"; };
 		267B390F0BCBBCEB00E8B1C9 /* NLXAdiumSoul.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NLXAdiumSoul.m; path = sources/NLXAdiumSoul.m; sourceTree = "<group>"; };
-		26BF39510BCBD1A50099C37C /* ABAdiumSoul.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ABAdiumSoul.h; path = sources/ABAdiumSoul.h; sourceTree = "<group>"; };
-		26BF39520BCBD1C60099C37C /* ABAdiumSoul.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ABAdiumSoul.m; path = sources/ABAdiumSoul.m; sourceTree = "<group>"; };
+		26BF396D0BCBD3010099C37C /* NLXNetSoulService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NLXNetSoulService.h; path = sources/NLXNetSoulService.h; sourceTree = "<group>"; };
+		26BF396E0BCBD3010099C37C /* NLXNetSoulService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NLXNetSoulService.m; path = sources/NLXNetSoulService.m; sourceTree = "<group>"; };
+		26BF39780BCBD36C0099C37C /* NLXNetSoulAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NLXNetSoulAccount.h; path = sources/NLXNetSoulAccount.h; sourceTree = "<group>"; };
+		26BF39790BCBD36C0099C37C /* NLXNetSoulAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NLXNetSoulAccount.m; path = sources/NLXNetSoulAccount.m; sourceTree = "<group>"; };
+		26BF397F0BCBD3BE0099C37C /* NLXNetSoulAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NLXNetSoulAccountViewController.h; path = sources/NLXNetSoulAccountViewController.h; sourceTree = "<group>"; };
+		26BF39800BCBD3BE0099C37C /* NLXNetSoulAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NLXNetSoulAccountViewController.m; path = sources/NLXNetSoulAccountViewController.m; sourceTree = "<group>"; };
 		26FE47AE0BCBBA7200333E55 /* Adium.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Adium.framework; path = frameworks/Adium.framework; sourceTree = "<group>"; };
 		26FE47AF0BCBBA7200333E55 /* AIUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AIUtilities.framework; path = frameworks/AIUtilities.framework; sourceTree = "<group>"; };
 		26FE47B00BCBBA7200333E55 /* FriBidi.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FriBidi.framework; path = frameworks/FriBidi.framework; sourceTree = "<group>"; };
@@ -81,10 +88,14 @@
 		08FB77AFFE84173DC02AAC07 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				26BF39510BCBD1A50099C37C /* ABAdiumSoul.h */,
 				267B390E0BCBBCEB00E8B1C9 /* NLXAdiumSoul.h */,
-				26BF39520BCBD1C60099C37C /* ABAdiumSoul.m */,
 				267B390F0BCBBCEB00E8B1C9 /* NLXAdiumSoul.m */,
+				26BF396D0BCBD3010099C37C /* NLXNetSoulService.h */,
+				26BF396E0BCBD3010099C37C /* NLXNetSoulService.m */,
+				26BF39780BCBD36C0099C37C /* NLXNetSoulAccount.h */,
+				26BF39790BCBD36C0099C37C /* NLXNetSoulAccount.m */,
+				26BF397F0BCBD3BE0099C37C /* NLXNetSoulAccountViewController.h */,
+				26BF39800BCBD3BE0099C37C /* NLXNetSoulAccountViewController.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -179,6 +190,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				267B39100BCBBCEB00E8B1C9 /* NLXAdiumSoul.m in Sources */,
+				26BF398E0BCBD4C40099C37C /* NLXNetSoulService.m in Sources */,
+				26BF39CC0BCBD6C60099C37C /* NLXNetSoulAccount.m in Sources */,
+				26BF39CD0BCBD6C80099C37C /* NLXNetSoulAccountViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
