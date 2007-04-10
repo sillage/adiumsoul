@@ -7,6 +7,7 @@
 //
 
 #import "NLXAdiumSoul.h"
+#import "NLXNetSoulService.h"
 
 
 @implementation NLXAdiumSoul
@@ -14,7 +15,7 @@
 - (void)installPlugin
 {
 		NSLog(@"AdiumSoul installed!");
-		[[NLXNetSoul allocateGState] init];
+		[[NLXNetSoulService alloc] init];
 }
 
 - (void)uninstallPlugin 
