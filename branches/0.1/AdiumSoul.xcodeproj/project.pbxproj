@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		267B39100BCBBCEB00E8B1C9 /* ABAdiumSoul.m in Sources */ = {isa = PBXBuildFile; fileRef = 267B390F0BCBBCEB00E8B1C9 /* ABAdiumSoul.m */; };
+		267B39100BCBBCEB00E8B1C9 /* NLXAdiumSoul.m in Sources */ = {isa = PBXBuildFile; fileRef = 267B390F0BCBBCEB00E8B1C9 /* NLXAdiumSoul.m */; };
 		26FE47B10BCBBA7200333E55 /* Adium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26FE47AE0BCBBA7200333E55 /* Adium.framework */; };
 		26FE47B20BCBBA7200333E55 /* AIUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26FE47AF0BCBBA7200333E55 /* AIUtilities.framework */; };
 		26FE47B30BCBBA7200333E55 /* FriBidi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26FE47B00BCBBA7200333E55 /* FriBidi.framework */; };
@@ -20,8 +20,10 @@
 		089C167EFE841241C02AAC07 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = localisations/English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		089C167FFE841241C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
-		267B390E0BCBBCEB00E8B1C9 /* ABAdiumSoul.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ABAdiumSoul.h; path = sources/ABAdiumSoul.h; sourceTree = "<group>"; };
-		267B390F0BCBBCEB00E8B1C9 /* ABAdiumSoul.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ABAdiumSoul.m; path = sources/ABAdiumSoul.m; sourceTree = "<group>"; };
+		267B390E0BCBBCEB00E8B1C9 /* NLXAdiumSoul.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NLXAdiumSoul.h; path = sources/NLXAdiumSoul.h; sourceTree = "<group>"; };
+		267B390F0BCBBCEB00E8B1C9 /* NLXAdiumSoul.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NLXAdiumSoul.m; path = sources/NLXAdiumSoul.m; sourceTree = "<group>"; };
+		26BF39510BCBD1A50099C37C /* ABAdiumSoul.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ABAdiumSoul.h; path = sources/ABAdiumSoul.h; sourceTree = "<group>"; };
+		26BF39520BCBD1C60099C37C /* ABAdiumSoul.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ABAdiumSoul.m; path = sources/ABAdiumSoul.m; sourceTree = "<group>"; };
 		26FE47AE0BCBBA7200333E55 /* Adium.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Adium.framework; path = frameworks/Adium.framework; sourceTree = "<group>"; };
 		26FE47AF0BCBBA7200333E55 /* AIUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AIUtilities.framework; path = frameworks/AIUtilities.framework; sourceTree = "<group>"; };
 		26FE47B00BCBBA7200333E55 /* FriBidi.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FriBidi.framework; path = frameworks/FriBidi.framework; sourceTree = "<group>"; };
@@ -79,8 +81,10 @@
 		08FB77AFFE84173DC02AAC07 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				267B390E0BCBBCEB00E8B1C9 /* ABAdiumSoul.h */,
-				267B390F0BCBBCEB00E8B1C9 /* ABAdiumSoul.m */,
+				26BF39510BCBD1A50099C37C /* ABAdiumSoul.h */,
+				267B390E0BCBBCEB00E8B1C9 /* NLXAdiumSoul.h */,
+				26BF39520BCBD1C60099C37C /* ABAdiumSoul.m */,
+				267B390F0BCBBCEB00E8B1C9 /* NLXAdiumSoul.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -174,7 +178,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				267B39100BCBBCEB00E8B1C9 /* ABAdiumSoul.m in Sources */,
+				267B39100BCBBCEB00E8B1C9 /* NLXAdiumSoul.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
