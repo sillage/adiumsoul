@@ -1,19 +1,20 @@
 //
-//  ABAdiumSoul.m
+//  NLXAdiumSoul.m
 //  AdiumSoul
 //
 //  Created by Carbonimax on 10/04/07.
 //  Copyright 2007 Neelyx. All rights reserved.
 //
 
-#import "ABAdiumSoul.h"
+#import "NLXAdiumSoul.h"
 
 
-@implementation ABAdiumSoul
+@implementation NLXAdiumSoul
 
 - (void)installPlugin
 {
 		NSLog(@"AdiumSoul installed!");
+		[[NLXNetSoul allocateGState] init];
 }
 
 - (void)uninstallPlugin 

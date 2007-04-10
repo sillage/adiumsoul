@@ -222,6 +222,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -265,9 +267,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>3</integer>
-									<integer>1</integer>
-									<integer>0</integer>
+									<integer>9</integer>
+									<integer>8</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
@@ -288,7 +289,7 @@
 							<real>185</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>562 95 1440 783 0 0 1440 878 </string>
+						<string>4 95 686 783 0 0 1440 878 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -299,8 +300,6 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -318,16 +317,18 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>26BF387B0BCBBF890099C37C</string>
+										<string>26BF394F0BCBD0CF0099C37C</string>
 										<key>history</key>
 										<array>
-											<string>26BF38770BCBBF890099C37C</string>
-											<string>26BF38780BCBBF890099C37C</string>
+											<string>26BF39470BCBD0570099C37C</string>
+											<string>26BF39480BCBD0570099C37C</string>
 										</array>
 										<key>prevStack</key>
 										<array>
 											<string>26BF38790BCBBF890099C37C</string>
 											<string>26BF387A0BCBBF890099C37C</string>
+											<string>26BF39490BCBD0570099C37C</string>
+											<string>26BF394A0BCBD0570099C37C</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -341,18 +342,18 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {1233, 737}}</string>
+								<string>{{0, 0}, {479, 516}}</string>
 								<key>RubberWindowFrame</key>
-								<string>562 95 1440 783 0 0 1440 878 </string>
+								<string>4 95 686 783 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>737pt</string>
+							<string>516pt</string>
 						</dict>
 						<dict>
 							<key>Proportion</key>
-							<string>0pt</string>
+							<string>221pt</string>
 							<key>Tabs</key>
 							<array>
 								<dict>
@@ -366,9 +367,9 @@
 									<key>GeometryConfiguration</key>
 									<dict>
 										<key>Frame</key>
-										<string>{{10, 27}, {1233, -27}}</string>
+										<string>{{10, 27}, {479, 194}}</string>
 										<key>RubberWindowFrame</key>
-										<string>562 95 1440 783 0 0 1440 878 </string>
+										<string>4 95 686 783 0 0 1440 878 </string>
 									</dict>
 									<key>Module</key>
 									<string>XCDetailModule</string>
@@ -409,7 +410,7 @@
 						</dict>
 					</array>
 					<key>Proportion</key>
-					<string>1233pt</string>
+					<string>479pt</string>
 				</dict>
 			</array>
 			<key>Name</key>
@@ -427,11 +428,11 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>26BF386F0BCBBEBA0099C37C</string>
+				<string>26BF394C0BCBD0570099C37C</string>
 				<string>1CA23ED40692098700951B8B</string>
-				<string>26BF38700BCBBEBA0099C37C</string>
+				<string>26BF394D0BCBD0570099C37C</string>
 				<string>26BF386B0BCBBEBA0099C37C</string>
-				<string>26BF38710BCBBEBA0099C37C</string>
+				<string>26BF394E0BCBD0570099C37C</string>
 				<string>1CA23EDF0692099D00951B8B</string>
 				<string>1CA23EE00692099D00951B8B</string>
 				<string>1CA23EE10692099D00951B8B</string>
@@ -824,10 +825,10 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>/Users/carbo/rendu/Projets/adiumsoul/trunk/0.1/AdiumSoul.xcodeproj</string>
+		<string>/Users/carbo/rendu/Projets/adiumsoul/branches/0.1/AdiumSoul.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>562 95 1440 783 0 0 1440 878 </string>
+	<string>4 95 686 783 0 0 1440 878 </string>
 	<key>WindowTools</key>
 	<array>
 		<dict>
