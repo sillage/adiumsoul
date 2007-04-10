@@ -1,5 +1,5 @@
 //
-//  ABAdiumSoul.h
+//  NLXAdiumSoul.h
 //  AdiumSoul
 //
 //  Created by Carbonimax on 10/04/07.
@@ -9,7 +9,7 @@
 #import <Cocoa/Cocoa.h>
 #import <Adium/AIPlugin.h>
 
-@interface ABAdiumSoul : AIPlugin {
+@interface NLXAdiumSoul : AIPlugin {
 
 }
 
