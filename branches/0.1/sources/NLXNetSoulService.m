@@ -14,7 +14,7 @@
 
 
 @implementation NLXNetSoulService
-
+ 
 - (Class)accountClass
 {
 		return [NLXNetSoulService class];
@@ -27,27 +27,27 @@
 
 - (NSString *)serviceCodeUniqueID
 {
-		return @"netsoul";
+		return @"nlxnetsoul";
 }
 
 - (NSString *)serviceID
 {
-		return @"NetSoul";
+		return @"Netsoul";
 }
 
 - (NSString *)serviceClass
 {
-		return @"NetSoul";
+		return @"Netsoul";
 }
 
 - (NSString *)shortDescription
 {
-		return @"NetSoul";
+		return @"Netsoul";
 }
 
 - (NSString *)longDescription
 {
-		return @"NetSoul";
+		return @"Netsoul";
 }
 
 - (NSCharacterSet *)allowedCharacters
@@ -103,8 +103,8 @@
 - (NSImage *)defaultServiceIconOfType:(AIServiceIconType)iconType
 {
 		if (iconType == AIServiceIconLarge)
-				return [NSImage imageNamed:@"NetSoulLarge" forClass:[self class]];
-		return [NSImage imageNamed:@"NetSoulSmall" forClass:[self class]];
+				return [NSImage imageNamed:@"epitechlargeicon" forClass:[self class]];
+		return [NSImage imageNamed:@"epitechmediumicon" forClass:[self class]];
 }
 
 - (BOOL)canCreateGroupChats
