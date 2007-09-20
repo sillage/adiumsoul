@@ -14,6 +14,9 @@
 		26FE47B10BCBBA7200333E55 /* Adium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26FE47AE0BCBBA7200333E55 /* Adium.framework */; };
 		26FE47B20BCBBA7200333E55 /* AIUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26FE47AF0BCBBA7200333E55 /* AIUtilities.framework */; };
 		26FE47B30BCBBA7200333E55 /* FriBidi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26FE47B00BCBBA7200333E55 /* FriBidi.framework */; };
+		5C0770530C9EED3300DFF5BC /* epitechlargeicon.tif in Resources */ = {isa = PBXBuildFile; fileRef = 5C0770510C9EED3300DFF5BC /* epitechlargeicon.tif */; };
+		5C07708D0C9EF09E00DFF5BC /* epitechmediumicon.tif in Resources */ = {isa = PBXBuildFile; fileRef = 5C07708C0C9EF09E00DFF5BC /* epitechmediumicon.tif */; };
+		5C3AF6E80CA2D14B00F340FB /* NLXNetsoulAccountView.nib in Resources */ = {isa = PBXBuildFile; fileRef = 5C3AF6E70CA2D14B00F340FB /* NLXNetsoulAccountView.nib */; };
 		8D5B49B0048680CD000E48DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
 		8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
@@ -35,6 +38,9 @@
 		26FE47AF0BCBBA7200333E55 /* AIUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AIUtilities.framework; path = frameworks/AIUtilities.framework; sourceTree = "<group>"; };
 		26FE47B00BCBBA7200333E55 /* FriBidi.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FriBidi.framework; path = frameworks/FriBidi.framework; sourceTree = "<group>"; };
 		32DBCF630370AF2F00C91783 /* AdiumSoul_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdiumSoul_Prefix.pch; sourceTree = "<group>"; };
+		5C0770510C9EED3300DFF5BC /* epitechlargeicon.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = epitechlargeicon.tif; sourceTree = "<group>"; };
+		5C07708C0C9EF09E00DFF5BC /* epitechmediumicon.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = epitechmediumicon.tif; sourceTree = "<group>"; };
+		5C3AF6E70CA2D14B00F340FB /* NLXNetsoulAccountView.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = NLXNetsoulAccountView.nib; sourceTree = "<group>"; };
 		8D5B49B6048680CD000E48DA /* AdiumSoul.AdiumPlugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdiumSoul.AdiumPlugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D5B49B7048680CD000E48DA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2F7E65807B2D6F200F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
@@ -79,8 +85,11 @@
 		089C167CFE841241C02AAC07 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				5C07708C0C9EF09E00DFF5BC /* epitechmediumicon.tif */,
+				5C0770510C9EED3300DFF5BC /* epitechlargeicon.tif */,
 				8D5B49B7048680CD000E48DA /* Info.plist */,
 				089C167DFE841241C02AAC07 /* InfoPlist.strings */,
+				5C3AF6E70CA2D14B00F340FB /* NLXNetsoulAccountView.nib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -179,6 +188,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D5B49B0048680CD000E48DA /* InfoPlist.strings in Resources */,
+				5C0770530C9EED3300DFF5BC /* epitechlargeicon.tif in Resources */,
+				5C07708D0C9EF09E00DFF5BC /* epitechmediumicon.tif in Resources */,
+				5C3AF6E80CA2D14B00F340FB /* NLXNetsoulAccountView.nib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +283,8 @@
 		1DEB913F08733D840010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;

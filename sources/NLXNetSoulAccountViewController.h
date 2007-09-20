@@ -11,7 +11,9 @@
 
 @interface NLXNetSoulAccountViewController : AIAccountViewController
 {
-
 }
+
+- (NSString *)nibName;
+- (void)dealloc;
 
 @end

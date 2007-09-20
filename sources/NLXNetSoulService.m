@@ -10,6 +10,7 @@
 #import <Adium/AIStatusControllerProtocol.h>
 #import <AIUtilities/AIImageAdditions.h>
 #import "NLXNetSoulService.h"
+#import "NLXNetSoulAccount.h"
 #import "NLXNetSoulAccountViewController.h"
 
 
@@ -17,7 +18,7 @@
  
 - (Class)accountClass
 {
-		return [NLXNetSoulService class];
+		return [NLXNetSoulAccount class];
 }
 
 - (AIAccountViewController *)accountViewController
@@ -111,6 +112,5 @@
 {
 		return NO;
 }
-
 
 @end
