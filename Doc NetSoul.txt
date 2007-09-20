@@ -1,0 +1,91 @@
+
+A. Authentification
+
+    server:     salut <socket> <hash md5 aleatoire> <ip client> <port client> <timestamp server>
+    client:     auth_ag ext_user none -
+    server:     rep 002 -- cmd end
+
+    client:     ext_user_klog <token krb> <system> <user location> <groupe> <user data>
+    
+    <user data> et <user location> : max 64 caracteres et urlencodé
+    
+
+B. Autres commandes
+
+Note:la commande "cmd" a l'interieur du PIE = "user_cmd" a l'exterieur
+
+    1.attach
+        "attach"
+        reponse du serveur :rep 002 -- cmd end
+    
+        permet d'acceder aux autres ressources du PIE
+        
+    2.state
+        "state <status>:<timestamp>"
+        pas de reponse
+        
+        pour changer de status
+        les status:
+            actif
+            away
+            idle
+            lock
+            server
+            none
+    
+    3.msg_user
+        "cmd msg_user <login(s)> msg <message>"
+        (trouver reponse ?)
+    
+    4.list_users
+        "list_users [login(s)]"
+        reponse du serveur:
+        <socket> <login> <ip (de qui?)> <login time> <last status change time> <trust level low> <trust level high> <system> <location> <groupe> <etat>:<timestamp>
+        rep 002 -- cmd end
+        
+    ou
+        list_users dontexist
+        rep 002 -- cmd end
+    
+    5.watch_log_user
+        "cmd watch_log_user <login(s)>"
+        pas de reponse (voir C. message du serveur)
+
+    6.who
+        "cmd who <login(s)>"
+        reponse compliqué
+        exemple:
+        user_cmd <socket>:user:<trust level>:<login>@<ip>:~:<user data>:<groupe> | who <socket> <login> <ip> <login time> 5 <state chg time> <trust level high> <trust level low> ~ <user data> <grp> <stt>:<stt time> <location>
+
+    7.ping
+        "ping"
+
+    8.exit
+        "exit"
+
+C. Message du serveur
+    1.connexion
+        user_cmd <socket>:user:<trust level>:<login>@<ip>:~:<user data>:<groupe> | login
+
+    2.changement de status
+        user_cmd <socket>:user:<trust level>:<login>@<ip>:~:<user data>:<groupe> | <status>:<timestamp>
+
+    3.deconnexion
+        user_cmd <socket>:user:<trust level>:<login>@<ip>:~:<user data>:<groupe> | logout
+
+    4.typing_end / typing_start
+        user_cmd <socket>:user:<trust level>:<login>@<ip>:~:<user data>:<groupe> | typing_end
+        user_cmd <socket>:user:<trust level>:<login>@<ip>:~:<user data>:<groupe> | typing_start
+
+    4.message
+        user_cmd <socket>:user:<trust level>:<login>@<ip>:~:<user data>:<groupe> | msg <message>
+        
+        (message max 256 car après encodage)
+
+    5.mail
+        user_cmd <socket>:user:<trust level>:<login>@<ip>:~:<user data>:<groupe> | new_mail -f <email origine> <sujet>
+
+    6.ping
+        ping <durée>
+        il faut repondre avant <durée> secondes
+        
