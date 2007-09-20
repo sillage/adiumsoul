@@ -8,7 +8,16 @@
 
 #import "NLXNetSoulAccountViewController.h"
 
-
 @implementation NLXNetSoulAccountViewController
+
+- (NSString *)nibName
+{
+    return @"NLXNetsoulAccountView";
+}
+
+- (void)dealloc
+{
+  [super dealloc];
+}
 
 @end

@@ -30,9 +30,7 @@
 			<key>filename</key>
 			<string>Info.plist</string>
 			<key>lastUsed</key>
-			<date>2007-04-10T12:56:08Z</date>
-			<key>selected</key>
-			<true/>
+			<date>2007-07-23T13:38:15Z</date>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -77,6 +75,6 @@
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{104, 40}, {871, 838}}</string>
+	<string>{{77, 4}, {871, 774}}</string>
 </dict>
 </plist>
