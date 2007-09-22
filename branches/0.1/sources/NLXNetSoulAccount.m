@@ -25,6 +25,8 @@
 #import <Adium/AIAccount.h>
 #import <Adium/AIPreferenceControllerProtocol.h>
 
+#import "gssapi/gssapi_krb5.h"
+
 #import "NLXAdiumSoul.h"
 #import "NLXNetSoulAccount.h"
 #import "NLXNetSoulAccountViewController.h"
@@ -35,7 +37,7 @@
 - (void)initAccount
 {
     [super initAccount];
-	
+
 //	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(userDidAcceptOrDenyInvitation:) name:@"KWXfireDenyAcceptInvitation" object:nil];
 }
 
@@ -91,9 +93,12 @@
 - (void)connect
 {
 	[super connect];
+	// recuperation du token kerberos
+	// connection socket
+	// authentification netsoul
 }
 
-// Y a-t-il qqch a ajouter ?
+// called when we need to disconnect
 - (void)disconnect
 {
 	[super disconnect];
