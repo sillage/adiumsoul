@@ -17,6 +17,10 @@
 		5C0770530C9EED3300DFF5BC /* epitechlargeicon.tif in Resources */ = {isa = PBXBuildFile; fileRef = 5C0770510C9EED3300DFF5BC /* epitechlargeicon.tif */; };
 		5C07708D0C9EF09E00DFF5BC /* epitechmediumicon.tif in Resources */ = {isa = PBXBuildFile; fileRef = 5C07708C0C9EF09E00DFF5BC /* epitechmediumicon.tif */; };
 		5C3AF6E80CA2D14B00F340FB /* NLXNetsoulAccountView.nib in Resources */ = {isa = PBXBuildFile; fileRef = 5C3AF6E70CA2D14B00F340FB /* NLXNetsoulAccountView.nib */; };
+		5C561F260CA55F78009A48DA /* Kerberos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C561F250CA55F78009A48DA /* Kerberos.framework */; };
+		5C567FBA0CA5636400D24198 /* NLXNetsoulKerberos.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C567FB90CA5636400D24198 /* NLXNetsoulKerberos.c */; };
+		5C567FC80CA565AF00D24198 /* base64.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C567FC60CA565AF00D24198 /* base64.c */; };
+		5CE9E7740CA3B9610012780E /* XgridFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CE9E7730CA3B9610012780E /* XgridFoundation.framework */; };
 		8D5B49B0048680CD000E48DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
 		8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
@@ -41,6 +45,12 @@
 		5C0770510C9EED3300DFF5BC /* epitechlargeicon.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = epitechlargeicon.tif; sourceTree = "<group>"; };
 		5C07708C0C9EF09E00DFF5BC /* epitechmediumicon.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = epitechmediumicon.tif; sourceTree = "<group>"; };
 		5C3AF6E70CA2D14B00F340FB /* NLXNetsoulAccountView.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = NLXNetsoulAccountView.nib; sourceTree = "<group>"; };
+		5C561F250CA55F78009A48DA /* Kerberos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kerberos.framework; path = /System/Library/Frameworks/Kerberos.framework; sourceTree = "<absolute>"; };
+		5C567FB80CA5636400D24198 /* NLXNetsoulKerberos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NLXNetsoulKerberos.h; sourceTree = "<group>"; };
+		5C567FB90CA5636400D24198 /* NLXNetsoulKerberos.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = NLXNetsoulKerberos.c; sourceTree = "<group>"; };
+		5C567FC60CA565AF00D24198 /* base64.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = base64.c; sourceTree = "<group>"; };
+		5C567FC70CA565AF00D24198 /* base64.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = base64.h; sourceTree = "<group>"; };
+		5CE9E7730CA3B9610012780E /* XgridFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XgridFoundation.framework; path = /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/XgridFoundation.framework; sourceTree = "<absolute>"; };
 		8D5B49B6048680CD000E48DA /* AdiumSoul.AdiumPlugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdiumSoul.AdiumPlugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D5B49B7048680CD000E48DA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2F7E65807B2D6F200F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
@@ -55,6 +65,8 @@
 				26FE47B10BCBBA7200333E55 /* Adium.framework in Frameworks */,
 				26FE47B20BCBBA7200333E55 /* AIUtilities.framework in Frameworks */,
 				26FE47B30BCBBA7200333E55 /* FriBidi.framework in Frameworks */,
+				5CE9E7740CA3B9610012780E /* XgridFoundation.framework in Frameworks */,
+				5C561F260CA55F78009A48DA /* Kerberos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +124,8 @@
 		1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5C561F250CA55F78009A48DA /* Kerberos.framework */,
+				5CE9E7730CA3B9610012780E /* XgridFoundation.framework */,
 				1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */,
 			);
 			name = "Linked Frameworks";
@@ -142,6 +156,10 @@
 			isa = PBXGroup;
 			children = (
 				32DBCF630370AF2F00C91783 /* AdiumSoul_Prefix.pch */,
+				5C567FB80CA5636400D24198 /* NLXNetsoulKerberos.h */,
+				5C567FB90CA5636400D24198 /* NLXNetsoulKerberos.c */,
+				5C567FC60CA565AF00D24198 /* base64.c */,
+				5C567FC70CA565AF00D24198 /* base64.h */,
 			);
 			name = "Other Sources";
 			sourceTree = "<group>";
@@ -205,6 +223,8 @@
 				26BF398E0BCBD4C40099C37C /* NLXNetSoulService.m in Sources */,
 				26BF39CC0BCBD6C60099C37C /* NLXNetSoulAccount.m in Sources */,
 				26BF39CD0BCBD6C80099C37C /* NLXNetSoulAccountViewController.m in Sources */,
+				5C567FBA0CA5636400D24198 /* NLXNetsoulKerberos.c in Sources */,
+				5C567FC80CA565AF00D24198 /* base64.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,16 +253,22 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_2)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_3)",
 				);
 				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/frameworks\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_2 = "\"$(SYSTEM_DEVELOPER_DIR)/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_3 = "\"/System/Library/Frameworks/\"";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = AdiumSoul_Prefix.pch;
+				HEADER_SEARCH_PATHS = "\"/System/Library/Frameworks/Kerberos.framework/Headers\"";
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "\"$(HOME)/Library/Application Support/Adium 2.0/PlugIns/\"";
+				LIBRARY_SEARCH_PATHS = "\"/usr/lib/\"";
 				OTHER_LDFLAGS = (
 					"-undefined",
 					dynamic_lookup,
@@ -263,8 +289,10 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_2)",
 				);
 				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/frameworks\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_2 = "\"$(SYSTEM_DEVELOPER_DIR)/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks\"";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -287,6 +315,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
 				PREBINDING = NO;
 				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
 			};
