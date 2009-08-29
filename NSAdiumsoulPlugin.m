@@ -28,7 +28,7 @@
 
 - (NSString *)pluginVersion
 {
-    return @"0.9b1.3";
+    return @"0.9d";
 }
 
 - (NSString *)pluginDescription
