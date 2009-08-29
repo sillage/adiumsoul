@@ -1,0 +1,9 @@
+//
+// Prefix header for all source files of the 'AdiumSoul' target in the 'AdiumSoul' project.
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+    #import <Adium/AIPlugin.h>
+    #import <Adium/ESDebugAILog.h>
+#endif
