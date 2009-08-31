@@ -35,5 +35,6 @@ void    import_name(gss_name_t *gss_name);
 Uchar*  init_context(gss_name_t gss_name, void *ctx);
 int     get_new_tickets(krb5_context c, krb5_principal p, krb5_ccache cc, char *pwd);
 int     create_ticket(char *login, char *passwd);
+void    base64_encode(const char* src, int length, char** destination);
 
 #endif

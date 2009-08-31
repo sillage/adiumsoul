@@ -28,46 +28,51 @@
     return [NSPMessages standardAuthentication:connectionValues];
 }
 
+//+ (NSString *)kerberosAuthentication:(NSDictionary *)connectionValues
+//{
+//    NSString*   returnString;
+//    NLXKrb*     krb = [[NLXKrb alloc] init];
+//    
+//    [krb connectWithLogin:[connectionValues objectForKey:@"login"]
+//                   passwd:[connectionValues objectForKey:@"password"] 
+//                  service:NETSOUL_SERVICE_NAME 
+//                    realm:NETSOUL_REALM];
+//    NSString* token = [[krb token] retain];
+//    [krb release];
+//    
+//    returnString = [NSString stringWithFormat:@"ext_user_klog %@ MacOSX %@ %@ %@",
+//                    token,
+//                    [NSPMessages encode:[connectionValues objectForKey:@"location"]],
+//                    [NSPMessages encode:[connectionValues objectForKey:@"promo"]],
+//                    [NSPMessages encode:[connectionValues objectForKey:@"userData"]]
+//                    ];
+//    [token release];
+//    return returnString;
+//}
+
 + (NSString *)kerberosAuthentication:(NSDictionary *)connectionValues
 {
-    NSString*   returnString;
-    NLXKrb*     krb = [[NLXKrb alloc] init];
-    
-    [krb connectWithLogin:[connectionValues objectForKey:@"login"]
-                   passwd:[connectionValues objectForKey:@"password"] 
-                  service:NETSOUL_SERVICE_NAME 
-                    realm:NETSOUL_REALM];
-    NSString* token = [[krb token] retain];
-    [krb release];
-    
+    NSString*       returnString;
+    gss_ctx_id_t    ctx = GSS_C_NO_CONTEXT;
+
+    Uchar*  tk = retrieve_token((char*)[[connectionValues objectForKey:@"login"] cStringUsingEncoding:NSUTF8StringEncoding],
+                                (char*)[[connectionValues objectForKey:@"password"] cStringUsingEncoding:NSUTF8StringEncoding],
+                                &ctx);
+    if (tk == NULL)
+    {
+        return nil;
+    }
+    NSString* token = [NSString stringWithCString:(char *)tk encoding:NSUTF8StringEncoding];
+    free(tk);
+
     returnString = [NSString stringWithFormat:@"ext_user_klog %@ MacOSX %@ %@ %@",
                     token,
                     [NSPMessages encode:[connectionValues objectForKey:@"location"]],
                     [NSPMessages encode:[connectionValues objectForKey:@"promo"]],
                     [NSPMessages encode:[connectionValues objectForKey:@"userData"]]
                     ];
-    [token release];
     return returnString;
 }
-
-//+ (NSString *)kerberosAuthentication:(NSDictionary *)connectionValues
-//{
-//    NSString*       returnString;
-//    gss_ctx_id_t    ctx = GSS_C_NO_CONTEXT;
-//
-//    Uchar*  tk = retrieve_token((char*)[[connectionValues objectForKey:@"login"] cStringUsingEncoding:NSUTF8StringEncoding],
-//                                (char*)[[connectionValues objectForKey:@"password"] cStringUsingEncoding:NSUTF8StringEncoding],
-//                                &ctx);
-//    NSString* token = [NSString stringWithCString:(char *)tk encoding:NSUTF8StringEncoding];
-//    free(tk);
-//
-//    returnString = [NSString stringWithFormat:@"ext_user_klog %@ MacOSX %@ epitech_2010 %@",
-//                    token,
-//                    [NSPMessages encode:[connectionValues objectForKey:@"location"]],
-//                    [NSPMessages encode:[connectionValues objectForKey:@"userData"]]
-//                    ];
-//    return returnString;
-//}
 
 + (NSString *)standardAuthentication:(NSDictionary *)connectionValues
 {
