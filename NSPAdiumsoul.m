@@ -211,13 +211,16 @@ static NSMutableDictionary* gl_functions = nil;
 
 - (void)sendMessageToSocket:(NSString *)message appendNewLine:(BOOL)appendNewLine
 {
-    AILog(@"[AdiumSoul] Writing to socket: '%@'", message);
-    if (appendNewLine)
+    if (message)
     {
-        message = [message stringByAppendingString:@"\n"];
+        AILog(@"[AdiumSoul] Writing to socket: '%@'", message);
+        if (appendNewLine)
+        {
+            message = [message stringByAppendingString:@"\n"];
+        }
+        NSData* messageData = [NSData dataWithBytes:[message UTF8String] length:[message length]];
+        [connection writeData:messageData];
     }
-    NSData* messageData = [NSData dataWithBytes:[message UTF8String] length:[message length]];
-    [connection writeData:messageData];
 }
 
 #pragma mark -
@@ -350,7 +353,10 @@ static NSMutableDictionary* gl_functions = nil;
     [authenticationValues setObject:[account password] forKey:@"password"];
     [authenticationValues setObject:[account preferenceForKey:NETSOUL_KEY_LOCATION group:GROUP_ACCOUNT_STATUS] forKey:@"location"];
     [authenticationValues setObject:[account preferenceForKey:NETSOUL_KEY_USERDATA group:GROUP_ACCOUNT_STATUS] forKey:@"userData"];
-    [authenticationValues setObject:[account preferenceForKey:NETSOUL_KEY_PROMO group:GROUP_ACCOUNT_STATUS] forKey:@"promo"];
+    if ([account preferenceForKey:NETSOUL_KEY_PROMO group:GROUP_ACCOUNT_STATUS])
+    {
+        [authenticationValues setObject:[account preferenceForKey:NETSOUL_KEY_PROMO group:GROUP_ACCOUNT_STATUS] forKey:@"promo"];
+    }
     [account connectionProgressStep:NETSOUL_STEP_AUTHENTICATION];
     [self waitReplyToSendMessage:@"ready" withObject:nil orErrorMessage:@"authenticationFailed"];
     [self sendMessageToSocket:[NSPMessages authentication:authenticationValues
@@ -460,7 +466,7 @@ static NSMutableDictionary* gl_functions = nil;
 
     NSMutableDictionary* data = [[replyDataPool objectAtIndex:0] retain];
     [replyDataPool removeObjectAtIndex:0];
-    // Netsoul replies 2 is everything is OK, interesting isn't it?
+    // Netsoul replies 2 when everything is OK, interesting isn't it?
     if ([message intValue] == 2)
     {
         SEL selector = NSSelectorFromString([data objectForKey:@"selector"]);

@@ -17,11 +17,14 @@
     IBOutlet    NSButton*       checkBox_showAlert;
     IBOutlet    NSButton*       checkBox_reconnect;
     IBOutlet    NSStepper*      stepper_reconnectTime;
-    IBOutlet    NSTextField*    textField_studentPromo;
     IBOutlet    NSTextField*    textField_passwordHelper;
     IBOutlet    NSTextField*    textField_reconnectTime;
     IBOutlet    NSTextField*    textField_netsoulLocation;
     IBOutlet    NSTextField*    textField_netsoulUserData;
+    IBOutlet    NSTextField*    textField_studentPromo;
+    IBOutlet    NSTextField*    label_studentPromo;
+
+    SInt32      macOsVersion;
 }
 
 - (NSString *)nibName;
