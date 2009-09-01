@@ -14,7 +14,7 @@
 #import <Adium/AIPreferenceControllerProtocol.h>
 #import <Adium/AIAccountControllerProtocol.h>
 
-#import "NSAdiumsoulAccount.h"
+#import "ASAccount.h"
 #import "NSPAdiumsoul.h"
 #import "NSPMessages.h"
 
@@ -22,7 +22,7 @@ static NSMutableDictionary* gl_functions = nil;
 
 @implementation NSPAdiumsoul
 
-- (id)initWithAdiumAccount:(NSAdiumsoulAccount *)adiumsoulAccount;
+- (id)initWithAdiumAccount:(ASAccount *)adiumsoulAccount;
 {
     if (self = [super init])
     {

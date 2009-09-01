@@ -1,5 +1,5 @@
 //
-//  NSAdiumsoulAccount.m
+//  ASAccount.m
 //  AdiumSoul
 //
 //  Created by Naixn on 08/04/08.
@@ -25,8 +25,8 @@
 
 /* End of copy */
 
-#import "NSAdiumsoulAccount.h"
-#import "NSAdiumsoulContactList.h"
+#import "ASAccount.h"
+#import "ASContactList.h"
 
 cnxSteps gl_steps[] =
 {
@@ -37,7 +37,7 @@ cnxSteps gl_steps[] =
     {-1, nil}
 };
 
-@implementation NSAdiumsoulAccount
+@implementation ASAccount
 
 /*!
  * @brief Init Account
@@ -50,11 +50,11 @@ cnxSteps gl_steps[] =
 
     AILog(@"[AdiumSoul] mainBundle path: %@", [[NSBundle bundleWithIdentifier:@"org.epimac.adiumsoul"] bundlePath]);
     adiumsoul = [[NSPAdiumsoul alloc] initWithAdiumAccount:self];
-    netsoulContactList = [[NSAdiumsoulContactList alloc] initWithAccount:self];
+    netsoulContactList = [[ASContactList alloc] initWithAccount:self];
     tryingToConnect = NO;
     connected = NO;
     connectionTimer = nil;
-    locationWindow = [[NSIAdiumsoulLocation alloc] initWithWindowNibName:@"NSIAdiumsoulLocation" withAccount:self];
+    locationWindow = [[ASILocation alloc] initWithWindowNibName:@"ASILocation" withAccount:self];
     locationSet = NO;
 }
 
@@ -473,7 +473,7 @@ cnxSteps gl_steps[] =
 - (void)receivedInfo:(NSArray *)infos forUser:(NSString *)uid
 {
     AIListContact*          contact = [netsoulContactList contactWithUID:uid];
-    NSAdiumsoulContact*     adiumsoulContact;
+    ASContact*     adiumsoulContact;
 
     AILog(@"[AdiumSoul] Updatding %@", contact);
     adiumsoulContact = [contact valueForProperty:NETSOUL_CONTACT];
@@ -499,7 +499,7 @@ cnxSteps gl_steps[] =
 - (void)contactIsNowOffline:(NSString *)uid deleteInformationOnSocket:(NSString *)socket
 {
     AIListContact*      contact = [netsoulContactList contactWithUID:uid];
-    NSAdiumsoulContact* adiumsoulContact;
+    ASContact* adiumsoulContact;
 
     adiumsoulContact = [contact valueForProperty:NETSOUL_CONTACT];
     [adiumsoulContact removeInformationsOnSocket:socket];
@@ -519,7 +519,7 @@ cnxSteps gl_steps[] =
 - (void)contact:(NSString *)uid changedState:(NSString *)state onSocket:(NSString *)socket
 {
     AIListContact*      contact = [netsoulContactList contactWithUID:uid];
-    NSAdiumsoulContact* adiumsoulContact;
+    ASContact* adiumsoulContact;
     NSString*           previousMainSocket;
     NSString*           previousMainState;
 

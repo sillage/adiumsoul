@@ -5,15 +5,15 @@
 //  Created by Naixn on 08/04/08.
 //
 
-#import "NSAdiumsoulPlugin.h"
-#import "NSAdiumsoulService.h"
+#import "ASPlugin.h"
+#import "ASService.h"
 
-@implementation NSAdiumsoulPlugin
+@implementation ASPlugin
 
 - (void)installPlugin
 {
     AILog(@"[AdiumSoul] AdiumSoul succesfully installed!");
-    [[NSAdiumsoulService alloc] init];
+    [[ASService alloc] init];
 }
 
 - (void)uninstallPlugin

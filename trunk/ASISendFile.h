@@ -1,5 +1,5 @@
 //
-//  NSIAdiumSoulSendFile.h
+//  ASISendFile.h
 //  AdiumSoul
 //
 //  Created by Naixn on 11/05/08.
@@ -18,9 +18,9 @@ enum NSISendMethods
     NSISendMethodOneLocation
 };
 
-@class NSAdiumsoulAccount, NSAdiumsoulContact;
+@class ASAccount, ASContact;
 
-@interface NSIAdiumSoulSendFile : AIWindowController
+@interface ASISendFile : AIWindowController
 {
     // Outlets
     IBOutlet    NSTextField*    label_login;
@@ -28,13 +28,13 @@ enum NSISendMethods
     IBOutlet    NSPopUpButton*  popUp_sendLocation;
     IBOutlet    NSImageView*    imageView_contactIcon;
 
-    NSAdiumsoulAccount*         account;
+    ASAccount*         account;
     ESFileTransfer*             fileTransfer;
     NSArray*                    locationArray;
 }
 
-+ (void)promptSendLocationForTransfer:(ESFileTransfer *)inFileTransfer onAccount:(NSAdiumsoulAccount *)inAccount;
-- (id)initWithWindowNibName:(NSString *)windowNibName forTransfer:(ESFileTransfer *)inFileTransfer onAccount:(NSAdiumsoulAccount *)inAccount;
++ (void)promptSendLocationForTransfer:(ESFileTransfer *)inFileTransfer onAccount:(ASAccount *)inAccount;
+- (id)initWithWindowNibName:(NSString *)windowNibName forTransfer:(ESFileTransfer *)inFileTransfer onAccount:(ASAccount *)inAccount;
 - (void)dealloc;
 - (void)windowDidLoad;
 - (IBAction)changePreference:(id)sender;

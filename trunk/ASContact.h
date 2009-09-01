@@ -1,5 +1,5 @@
 //
-//  NSAdiumsoulContact.h
+//  ASContact.h
 //  AdiumSoul
 //
 //  Created by Naixn on 13/04/08.
@@ -28,7 +28,7 @@ enum
     NETSOUL_CONTACTSTATE_ONLINE
 };
 
-@interface NSAdiumsoulContact : NSObject
+@interface ASContact : NSObject
 {
     NSString*               UID;
     NSString*               mainSocket;

@@ -8,7 +8,7 @@
 #import <Adium/AIContentTyping.h>
 
 
-@class NSAdiumsoulAccount;
+@class ASAccount;
 
 #define NETSOUL_KEY_USERDATA @"User Data"
 #define NETSOUL_KEY_LOCATION @"Location"
@@ -22,7 +22,7 @@
 
 @interface NSPAdiumsoul : NSObject
 {
-    NSAdiumsoulAccount* account;
+    ASAccount* account;
     NSFileHandle*       connection;
     BOOL                authenticated;
 
@@ -35,7 +35,7 @@
 }
 
 // Init and connexion
-- (id)initWithAdiumAccount:(NSAdiumsoulAccount *)account;
+- (id)initWithAdiumAccount:(ASAccount *)account;
 - (void)threadConnect:(id)mainThreadOject;
 - (void)failedToConnect;
 - (void)didConnectWithFd:(id)fdNumber;

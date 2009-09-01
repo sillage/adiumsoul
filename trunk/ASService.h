@@ -1,5 +1,5 @@
 //
-//  NSAdiumsoulService.h
+//  ASService.h
 //  AdiumSoul
 //
 //  Created by Naixn on 08/04/08.
@@ -7,7 +7,7 @@
 
 #import <Adium/AIService.h>
 
-@interface NSAdiumsoulService : AIService
+@interface ASService : AIService
 {
 }
 
