@@ -1,20 +1,20 @@
 //
-//  NSAdiumsoulContactList.m
+//  ASContactList.m
 //  AdiumSoul
 //
 //  Created by Naixn on 13/04/08.
 //  Copyright 2008 Epitech. All rights reserved.
 //
 
-#import "NSAdiumsoulContactList.h"
-#import "NSAdiumsoulAccount.h"
+#import "ASContactList.h"
+#import "ASAccount.h"
 #import <Adium/AIContactControllerProtocol.h>
 #import <Adium/AILoginControllerProtocol.h>
 
 
-@implementation NSAdiumsoulContactList
+@implementation ASContactList
 
-- (id)initWithAccount:(NSAdiumsoulAccount *)adiumsoulAccount
+- (id)initWithAccount:(ASAccount *)adiumsoulAccount
 {
     if (self = [super init])
     {
@@ -124,12 +124,12 @@
             [contact addRemoteGroupName:group];
         }
     }
-    NSAdiumsoulContact* adiumsoulContact = [contact valueForProperty:NETSOUL_CONTACT];
+    ASContact* adiumsoulContact = [contact valueForProperty:NETSOUL_CONTACT];
     if (adiumsoulContact)
     {
         [contact setValue:nil forProperty:NETSOUL_CONTACT notify:NO];
     }
-    [contact setValue:[[[NSAdiumsoulContact alloc] initWithUID:uid] autorelease] forProperty:NETSOUL_CONTACT notify:NO];
+    [contact setValue:[[[ASContact alloc] initWithUID:uid] autorelease] forProperty:NETSOUL_CONTACT notify:NO];
     if (addToList)
     {
         [adiumsoulContacts setObject:[NSMutableDictionary dictionary] forKey:uid];
@@ -158,12 +158,12 @@
             }
         }
     }
-    NSAdiumsoulContact* adiumsoulContact = [contact valueForProperty:NETSOUL_CONTACT];
+    ASContact* adiumsoulContact = [contact valueForProperty:NETSOUL_CONTACT];
     if (adiumsoulContact)
     {
         [contact setValue:nil forProperty:NETSOUL_CONTACT notify:NO];
     }
-    [contact setValue:[[[NSAdiumsoulContact alloc] initWithUID:uid] autorelease] forProperty:NETSOUL_CONTACT notify:NO];
+    [contact setValue:[[[ASContact alloc] initWithUID:uid] autorelease] forProperty:NETSOUL_CONTACT notify:NO];
     if (addToList)
     {
         [adiumsoulContacts setObject:[NSMutableDictionary dictionary] forKey:uid];
