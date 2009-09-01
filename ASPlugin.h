@@ -1,11 +1,11 @@
 //
-//  NSAdiumsoulPlugin.h
+//  ASPlugin.h
 //  AdiumSoul
 //
 //  Created by Naixn on 08/04/08.
 //
 
-@interface NSAdiumsoulPlugin : AIPlugin
+@interface ASPlugin : AIPlugin
 {
 }
 

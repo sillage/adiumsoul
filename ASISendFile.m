@@ -1,29 +1,29 @@
 //
-//  NSIAdiumSoulSendFile.m
+//  ASISendFile.m
 //  AdiumSoul
 //
 //  Created by Naixn on 11/05/08.
 //  Copyright 2008 Epitech. All rights reserved.
 //
 
-#import "NSIAdiumSoulSendFile.h"
-#import "NSAdiumsoulAccount.h"
-#import "NSAdiumsoulContact.h"
+#import "ASISendFile.h"
+#import "ASAccount.h"
+#import "ASContact.h"
 
 
-@interface NSIAdiumSoulSendFile (Private)
+@interface ASISendFile (Private)
 - (void)configureLocationMenu;
 - (void)configureContactPhoto;
 - (void)windowOrderFront;
 @end
 
-@implementation NSIAdiumSoulSendFile
+@implementation ASISendFile
 
-+ (void)promptSendLocationForTransfer:(ESFileTransfer *)inFileTransfer onAccount:(NSAdiumsoulAccount *)inAccount;
++ (void)promptSendLocationForTransfer:(ESFileTransfer *)inFileTransfer onAccount:(ASAccount *)inAccount;
 {
-    NSIAdiumSoulSendFile*   sendLocationWindow;
+    ASISendFile*   sendLocationWindow;
 
-    sendLocationWindow = [[self alloc] initWithWindowNibName:@"NSIAdiumSoulSendFile"
+    sendLocationWindow = [[self alloc] initWithWindowNibName:@"ASISendFile"
                                                  forTransfer:inFileTransfer
                                                    onAccount:inAccount];
     [sendLocationWindow showWindow:nil];
@@ -31,7 +31,7 @@
     [NSTimer timerWithTimeInterval:1 target:sendLocationWindow selector:@selector(windowOrderFront) userInfo:nil repeats:NO];
 }
 
-- (id)initWithWindowNibName:(NSString *)windowNibName forTransfer:(ESFileTransfer *)inFileTransfer onAccount:(NSAdiumsoulAccount *)inAccount;
+- (id)initWithWindowNibName:(NSString *)windowNibName forTransfer:(ESFileTransfer *)inFileTransfer onAccount:(ASAccount *)inAccount;
 {
     if ((self = [super initWithWindowNibName:windowNibName]))
     {
@@ -91,7 +91,7 @@
 
 @end
 
-@implementation NSIAdiumSoulSendFile (Private)
+@implementation ASISendFile (Private)
 
 - (void)configureLocationMenu
 {

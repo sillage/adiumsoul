@@ -1,22 +1,22 @@
 //
-//  NSOutgoingTransfer.m
+//  ASOutgoingTransfer.m
 //  AdiumSoul
 //
 //  Created by Naixn on 22/05/08.
 //  Copyright 2008 Epitech. All rights reserved.
 //
 
-#import "NSOutgoingTransfer.h"
+#import "ASOutgoingTransfer.h"
 
 
 static NSAutoreleasePool*   gl_pool = nil;
 
-@implementation NSOutgoingTransfer
+@implementation ASOutgoingTransfer
 
 + (void)createTransferWithData:(NSDictionary *)tData
 {
     NSConnection*       connectionToTransferManager;
-    NSOutgoingTransfer* transfer;
+    ASOutgoingTransfer* transfer;
 
     gl_pool = [[NSAutoreleasePool alloc] init];
     [[NSNotificationCenter defaultCenter] addObserver:self
@@ -25,7 +25,7 @@ static NSAutoreleasePool*   gl_pool = nil;
                                                object:[NSThread currentThread]];
     connectionToTransferManager = [NSConnection connectionWithReceivePort:[tData objectForKey:@"port2"] sendPort:[tData objectForKey:@"port1"]];
     transfer = [[self alloc] initTransfer:[tData objectForKey:@"fileTransfer"]
-                      withTransferManager:((NSTransferManager *)[connectionToTransferManager rootProxy])];
+                      withTransferManager:((ASTransferManager *)[connectionToTransferManager rootProxy])];
     [transfer release];
 }
 
@@ -34,7 +34,7 @@ static NSAutoreleasePool*   gl_pool = nil;
     [gl_pool release];
 }
 
-- (id)initTransfer:(ESFileTransfer *)inFileTransfer withTransferManager:(NSTransferManager *)inTransferManager
+- (id)initTransfer:(ESFileTransfer *)inFileTransfer withTransferManager:(ASTransferManager *)inTransferManager
 {
     if (self = [super init])
     {

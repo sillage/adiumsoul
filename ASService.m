@@ -1,5 +1,5 @@
 //
-//  NSAdiumsoulService.m
+//  ASService.m
 //  AdiumSoul
 //
 //  Created by Naixn on 08/04/08.
@@ -8,12 +8,12 @@
 #import <Adium/AIAccount.h>
 #import <AIUtilities/AIImageAdditions.h>
 
-//#import "NSAdiumsoulAccountViewController.h"
-#import "NSAdiumsoulAccount.h"
-#import "NSAdiumsoulService.h"
-#import "NSIAdiumsoulAccountView.h"
+//#import "ASAccountViewController.h"
+#import "ASAccount.h"
+#import "ASService.h"
+#import "ASIAccountView.h"
 
-@implementation NSAdiumsoulService
+@implementation ASService
 
 //Account Creation -----------------------------------------------------------------------------------------------------
 #pragma mark Account Creation
@@ -26,7 +26,7 @@
  */
 - (Class)accountClass
 {
-    return [NSAdiumsoulAccount class];
+    return [ASAccount class];
 }
 
 /*!
@@ -38,7 +38,7 @@
  */
 - (AIAccountViewController *)accountViewController
 {
-	return [NSIAdiumsoulAccountView accountViewController];
+	return [ASIAccountView accountViewController];
 }
 
 //Service Description --------------------------------------------------------------------------------------------------

@@ -1,12 +1,12 @@
 //
-//  NSIAdiumsoulAccountView.m
+//  ASIAccountView.m
 //  NetSoul Interface - AdiumSoul
 //
 //  Created by Naixn on 19/04/08.
 //  Copyright 2008 Epitech. All rights reserved.
 //
 
-#import "NSIAdiumsoulAccountView.h"
+#import "ASIAccountView.h"
 #import "NSPAdiumsoul.h"
 #import "kerberos.lib.h"
 
@@ -15,7 +15,7 @@
 #define kAdiumSoulMinimumVersionForKerberos 0x1060
 
 
-@implementation NSIAdiumsoulAccountView
+@implementation ASIAccountView
 
 - (id)init
 {
@@ -35,7 +35,7 @@
 
 - (NSString *)nibName
 {
-    return @"NSIAdiumsoulAccountView";
+    return @"ASIAccountView";
 }
 
 //Preferences ----------------------------------------------------------------------------------------------------------

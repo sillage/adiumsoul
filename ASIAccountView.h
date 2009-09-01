@@ -1,5 +1,5 @@
 //
-//  NSIAdiumsoulAccountView.h
+//  ASIAccountView.h
 //  NetSoul Interface - AdiumSoul
 //
 //  Created by Naixn on 19/04/08.
@@ -12,7 +12,7 @@
 #import "ASKrbConfinstallController.h"
 
 
-@interface NSIAdiumsoulAccountView : AIAccountViewController
+@interface ASIAccountView : AIAccountViewController
 {
     // Setup outlets
     IBOutlet    NSButton*       checkBox_useKerberos;

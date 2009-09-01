@@ -1,24 +1,24 @@
 //
-//  NSTransferManager.m
+//  ASTransferManager.m
 //  AdiumSoul
 //
 //  Created by Naixn on 22/05/08.
 //  Copyright 2008 Epitech. All rights reserved.
 //
 
-#import "NSTransferManager.h"
-#import "NSIncomingTransfer.h"
-#import "NSOutgoingTransfer.h"
-#import "NSAdiumsoulAccount.h"
+#import "ASTransferManager.h"
+#import "ASIncomingTransfer.h"
+#import "ASOutgoingTransfer.h"
+#import "ASAccount.h"
 
 
-@interface NSTransferManager (Private)
+@interface ASTransferManager (Private)
 - (void)createThreadForTransfer:(ESFileTransfer *)fileTransfer andPerformSelectorOnTarget:(id)aTarget withObject:(id)anArgument;
 @end
 
-@implementation NSTransferManager
+@implementation ASTransferManager
 
-- (id)initWithAccount:(NSAdiumsoulAccount *)inAccount
+- (id)initWithAccount:(ASAccount *)inAccount
 {
     if (self = [super init])
     {
@@ -40,29 +40,29 @@
 - (void)prepareOutgoingTransfer:(ESFileTransfer *)fileTransfer
 {
     [self createThreadForTransfer:fileTransfer
-       andPerformSelectorOnTarget:[NSOutgoingTransfer class]
+       andPerformSelectorOnTarget:[ASOutgoingTransfer class]
                        withObject:nil];
 }
 
 - (void)prepareIncomingTransfer:(ESFileTransfer *)fileTransfer fromAddress:(NSString *)ipAddress andPort:(NSString *)port
 {
     [self createThreadForTransfer:fileTransfer
-       andPerformSelectorOnTarget:[NSIncomingTransfer class]
+       andPerformSelectorOnTarget:[ASIncomingTransfer class]
                        withObject:[NSDictionary dictionaryWithObjectsAndKeys:ipAddress, @"ipAddress", port, @"port"]];
 }
 
 - (void)setThreadedObject:(id)threadedObject forTransfer:(ESFileTransfer *)fileTransfer
 {
     [dataLock lock];
-    [transfers setObject:(id<NSTransferProtocol>)threadedObject
+    [transfers setObject:(id<ASTransferProtocol>)threadedObject
                   forKey:@"threadedObject"];
     [dataLock unlock];
-    [threadedObject setProtocolForProxy:@protocol(NSTransferProtocol)];
+    [threadedObject setProtocolForProxy:@protocol(ASTransferProtocol)];
 }
 
 @end
 
-@implementation NSTransferManager (Private)
+@implementation ASTransferManager (Private)
 
 - (void)createThreadForTransfer:(ESFileTransfer *)fileTransfer andPerformSelectorOnTarget:(id)aTarget withObject:(id)anArgument
 {

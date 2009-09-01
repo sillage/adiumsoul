@@ -1,18 +1,18 @@
 //
-//  NSIAdiumsoulLocation.m
+//  ASILocation.m
 //  AdiumSoul
 //
 //  Created by Naixn on 20/04/08.
 //  Copyright 2008 Epitech. All rights reserved.
 //
 
-#import "NSIAdiumsoulLocation.h"
-#import "NSAdiumsoulAccount.h"
+#import "ASILocation.h"
+#import "ASAccount.h"
 
 
-@implementation NSIAdiumsoulLocation
+@implementation ASILocation
 
-- (id)initWithWindowNibName:(NSString *)windowNibName withAccount:(NSAdiumsoulAccount *)account
+- (id)initWithWindowNibName:(NSString *)windowNibName withAccount:(ASAccount *)account
 {
     if (self = [super initWithWindowNibName:windowNibName])
     {

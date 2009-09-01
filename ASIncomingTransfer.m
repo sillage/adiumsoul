@@ -1,17 +1,17 @@
 //
-//  NSIncomingTransfer.m
+//  ASIncomingTransfer.m
 //  AdiumSoul
 //
 //  Created by Naixn on 22/05/08.
 //  Copyright 2008 Epitech. All rights reserved.
 //
 
-#import "NSIncomingTransfer.h"
+#import "ASIncomingTransfer.h"
 
 
 static NSAutoreleasePool*   gl_pool = nil;
 
-@implementation NSIncomingTransfer
+@implementation ASIncomingTransfer
 
 + (void)createTransferWithData:(NSDictionary *)tData
 {

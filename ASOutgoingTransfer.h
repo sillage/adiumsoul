@@ -1,5 +1,5 @@
 //
-//  NSOutgoingTransfer.h
+//  ASOutgoingTransfer.h
 //  AdiumSoul
 //
 //  Created by Naixn on 22/05/08.
@@ -8,12 +8,12 @@
 
 #import <Cocoa/Cocoa.h>
 #import <Adium/ESFileTransfer.h>
-#import "NSTransferManager.h"
+#import "ASTransferManager.h"
 
 
-@interface NSOutgoingTransfer : NSObject <NSTransferProtocol>
+@interface ASOutgoingTransfer : NSObject <ASTransferProtocol>
 {
-    NSTransferManager*  transferManagerProxy;
+    ASTransferManager*  transferManagerProxy;
     ESFileTransfer*     fileTransfer;
     NSSocketPort*       serverSock;
     NSFileHandle*       socketHandle;
@@ -21,7 +21,7 @@
 
 + (void)createTransferWithData:(NSDictionary *)tData;
 + (void)cleanupThread:(NSNotification *)notification;
-- (id)initTransfer:(ESFileTransfer *)inFileTransfer withTransferManager:(NSTransferManager *)inTransferManager;
+- (id)initTransfer:(ESFileTransfer *)inFileTransfer withTransferManager:(ASTransferManager *)inTransferManager;
 - (void)connectionAccepted:(NSNotification *)notification;
 - (void)cancel;
 

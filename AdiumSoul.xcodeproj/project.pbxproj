@@ -17,17 +17,17 @@
 		767D7DAA0DAFF5EA0073C4C0 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 767D7D880DAFF35B0073C4C0 /* AppKit.framework */; };
 		767D7DD60DB0274C0073C4C0 /* netsoullargeicon.tif in Resources */ = {isa = PBXBuildFile; fileRef = 767D7DD40DB0274C0073C4C0 /* netsoullargeicon.tif */; };
 		767D7DD70DB0274C0073C4C0 /* netsoulmediumicon.tif in Resources */ = {isa = PBXBuildFile; fileRef = 767D7DD50DB0274C0073C4C0 /* netsoulmediumicon.tif */; };
-		76974BCB0DB9897700CAF3FE /* NSIAdiumsoulAccountView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76974BCA0DB9897700CAF3FE /* NSIAdiumsoulAccountView.xib */; };
-		76974BD10DB98B0A00CAF3FE /* NSIAdiumsoulAccountView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76974BD00DB98B0A00CAF3FE /* NSIAdiumsoulAccountView.m */; };
-		76C2935C0DBACC7800C0058E /* NSIAdiumsoulLocation.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76C2935B0DBACC7800C0058E /* NSIAdiumsoulLocation.xib */; };
-		76C293600DBACC8500C0058E /* NSIAdiumsoulLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C2935F0DBACC8500C0058E /* NSIAdiumsoulLocation.m */; };
-		76F00A980DB0FF15000933F4 /* NSAdiumsoulAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 76F00A970DB0FF15000933F4 /* NSAdiumsoulAccount.m */; };
-		76F00E160DB26F05000933F4 /* NSAdiumsoulContactList.m in Sources */ = {isa = PBXBuildFile; fileRef = 76F00E150DB26F05000933F4 /* NSAdiumsoulContactList.m */; };
-		76F00E4F0DB2878B000933F4 /* NSAdiumsoulContact.m in Sources */ = {isa = PBXBuildFile; fileRef = 76F00E4E0DB2878B000933F4 /* NSAdiumsoulContact.m */; };
+		76974BCB0DB9897700CAF3FE /* ASIAccountView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76974BCA0DB9897700CAF3FE /* ASIAccountView.xib */; };
+		76974BD10DB98B0A00CAF3FE /* ASIAccountView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76974BD00DB98B0A00CAF3FE /* ASIAccountView.m */; };
+		76C2935C0DBACC7800C0058E /* ASILocation.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76C2935B0DBACC7800C0058E /* ASILocation.xib */; };
+		76C293600DBACC8500C0058E /* ASILocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C2935F0DBACC8500C0058E /* ASILocation.m */; };
+		76F00A980DB0FF15000933F4 /* ASAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 76F00A970DB0FF15000933F4 /* ASAccount.m */; };
+		76F00E160DB26F05000933F4 /* ASContactList.m in Sources */ = {isa = PBXBuildFile; fileRef = 76F00E150DB26F05000933F4 /* ASContactList.m */; };
+		76F00E4F0DB2878B000933F4 /* ASContact.m in Sources */ = {isa = PBXBuildFile; fileRef = 76F00E4E0DB2878B000933F4 /* ASContact.m */; };
 		76F0132F0DB39715000933F4 /* kerberos.lib.m in Sources */ = {isa = PBXBuildFile; fileRef = 76F0132E0DB39715000933F4 /* kerberos.lib.m */; };
 		76F6FA8F0DABC3BD0058FB66 /* Kerberos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76F6FA8E0DABC3BD0058FB66 /* Kerberos.framework */; };
-		76F6FAB20DABC5FC0058FB66 /* NSAdiumsoulPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 76F6FAB10DABC5FC0058FB66 /* NSAdiumsoulPlugin.m */; };
-		76F6FAE00DABCC730058FB66 /* NSAdiumsoulService.m in Sources */ = {isa = PBXBuildFile; fileRef = 76F6FADF0DABCC730058FB66 /* NSAdiumsoulService.m */; };
+		76F6FAB20DABC5FC0058FB66 /* ASPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 76F6FAB10DABC5FC0058FB66 /* ASPlugin.m */; };
+		76F6FAE00DABCC730058FB66 /* ASService.m in Sources */ = {isa = PBXBuildFile; fileRef = 76F6FADF0DABCC730058FB66 /* ASService.m */; };
 		76F6FC1F0DAC2EF10058FB66 /* NSPAdiumsoul.m in Sources */ = {isa = PBXBuildFile; fileRef = 76F6FC1E0DAC2EF10058FB66 /* NSPAdiumsoul.m */; };
 		76FE7D4A104CD74C0067EBC0 /* ASKrbConfinstallController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76FE7D49104CD74C0067EBC0 /* ASKrbConfinstallController.m */; };
 		76FE7DBF104CE4440067EBC0 /* SaveNewProfile.c in Sources */ = {isa = PBXBuildFile; fileRef = 76FE7DBE104CE4440067EBC0 /* SaveNewProfile.c */; };
@@ -47,7 +47,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = 089C1669FE841209C02AAC07 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 76FE7DB8104CE4190067EBC0 /* save_new_profile */;
+			remoteGlobalIDString = 76FE7DB8104CE4190067EBC0;
 			remoteInfo = save_new_profile;
 		};
 /* End PBXContainerItemProxy section */
@@ -85,34 +85,33 @@
 		767D7D880DAFF35B0073C4C0 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		767D7DD40DB0274C0073C4C0 /* netsoullargeicon.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = netsoullargeicon.tif; path = Images/netsoullargeicon.tif; sourceTree = SOURCE_ROOT; };
 		767D7DD50DB0274C0073C4C0 /* netsoulmediumicon.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = netsoulmediumicon.tif; path = Images/netsoulmediumicon.tif; sourceTree = SOURCE_ROOT; };
-		76974BCA0DB9897700CAF3FE /* NSIAdiumsoulAccountView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NSIAdiumsoulAccountView.xib; sourceTree = "<group>"; };
-		76974BCF0DB98B0A00CAF3FE /* NSIAdiumsoulAccountView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSIAdiumsoulAccountView.h; sourceTree = "<group>"; };
-		76974BD00DB98B0A00CAF3FE /* NSIAdiumsoulAccountView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSIAdiumsoulAccountView.m; sourceTree = "<group>"; };
-		76C2935B0DBACC7800C0058E /* NSIAdiumsoulLocation.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NSIAdiumsoulLocation.xib; sourceTree = "<group>"; };
-		76C2935E0DBACC8500C0058E /* NSIAdiumsoulLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSIAdiumsoulLocation.h; sourceTree = "<group>"; };
-		76C2935F0DBACC8500C0058E /* NSIAdiumsoulLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSIAdiumsoulLocation.m; sourceTree = "<group>"; };
-		76C66D730DD739AD00330AAF /* NSIAdiumSoulSendFile.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NSIAdiumSoulSendFile.xib; sourceTree = "<group>"; };
-		76C66DB40DD7449400330AAF /* NSIAdiumSoulSendFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSIAdiumSoulSendFile.h; sourceTree = "<group>"; };
-		76C66DB50DD7449400330AAF /* NSIAdiumSoulSendFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSIAdiumSoulSendFile.m; sourceTree = "<group>"; };
-		76CB59E20DE619DC00DF379E /* NSTransferManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSTransferManager.h; sourceTree = "<group>"; };
-		76CB59E30DE619DC00DF379E /* NSTransferManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSTransferManager.m; sourceTree = "<group>"; };
-		76CB59EC0DE61FBB00DF379E /* NSIncomingTransfer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSIncomingTransfer.h; sourceTree = "<group>"; };
-		76CB59ED0DE61FBB00DF379E /* NSIncomingTransfer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSIncomingTransfer.m; sourceTree = "<group>"; };
-		76CB59EF0DE61FCC00DF379E /* NSOutgoingTransfer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSOutgoingTransfer.h; sourceTree = "<group>"; };
-		76CB59F00DE61FCC00DF379E /* NSOutgoingTransfer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSOutgoingTransfer.m; sourceTree = "<group>"; };
-		76F00A970DB0FF15000933F4 /* NSAdiumsoulAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSAdiumsoulAccount.m; sourceTree = "<group>"; };
-		76F00E140DB26F05000933F4 /* NSAdiumsoulContactList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSAdiumsoulContactList.h; sourceTree = "<group>"; };
-		76F00E150DB26F05000933F4 /* NSAdiumsoulContactList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSAdiumsoulContactList.m; sourceTree = "<group>"; };
-		76F00E4D0DB2878B000933F4 /* NSAdiumsoulContact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSAdiumsoulContact.h; sourceTree = "<group>"; };
-		76F00E4E0DB2878B000933F4 /* NSAdiumsoulContact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSAdiumsoulContact.m; sourceTree = "<group>"; };
+		76974BCA0DB9897700CAF3FE /* ASIAccountView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ASIAccountView.xib; sourceTree = "<group>"; };
+		76974BCF0DB98B0A00CAF3FE /* ASIAccountView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIAccountView.h; sourceTree = "<group>"; };
+		76974BD00DB98B0A00CAF3FE /* ASIAccountView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIAccountView.m; sourceTree = "<group>"; };
+		76C2935B0DBACC7800C0058E /* ASILocation.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ASILocation.xib; sourceTree = "<group>"; };
+		76C2935E0DBACC8500C0058E /* ASILocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASILocation.h; sourceTree = "<group>"; };
+		76C2935F0DBACC8500C0058E /* ASILocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASILocation.m; sourceTree = "<group>"; };
+		76C66D730DD739AD00330AAF /* ASISendFile.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ASISendFile.xib; sourceTree = "<group>"; };
+		76C66DB40DD7449400330AAF /* ASISendFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASISendFile.h; sourceTree = "<group>"; };
+		76C66DB50DD7449400330AAF /* ASISendFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASISendFile.m; sourceTree = "<group>"; };
+		76CB59E20DE619DC00DF379E /* ASTransferManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTransferManager.h; sourceTree = "<group>"; };
+		76CB59E30DE619DC00DF379E /* ASTransferManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTransferManager.m; sourceTree = "<group>"; };
+		76CB59EC0DE61FBB00DF379E /* ASIncomingTransfer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIncomingTransfer.h; sourceTree = "<group>"; };
+		76CB59ED0DE61FBB00DF379E /* ASIncomingTransfer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIncomingTransfer.m; sourceTree = "<group>"; };
+		76CB59EF0DE61FCC00DF379E /* ASOutgoingTransfer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASOutgoingTransfer.h; sourceTree = "<group>"; };
+		76CB59F00DE61FCC00DF379E /* ASOutgoingTransfer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASOutgoingTransfer.m; sourceTree = "<group>"; };
+		76F00A970DB0FF15000933F4 /* ASAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASAccount.m; sourceTree = "<group>"; };
+		76F00E150DB26F05000933F4 /* ASContactList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASContactList.m; sourceTree = "<group>"; };
+		76F00E4D0DB2878B000933F4 /* ASContact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASContact.h; sourceTree = "<group>"; };
+		76F00E4E0DB2878B000933F4 /* ASContact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASContact.m; sourceTree = "<group>"; };
 		76F0132D0DB39715000933F4 /* kerberos.lib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kerberos.lib.h; sourceTree = "<group>"; };
 		76F0132E0DB39715000933F4 /* kerberos.lib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = kerberos.lib.m; sourceTree = "<group>"; };
 		76F6FA8E0DABC3BD0058FB66 /* Kerberos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kerberos.framework; path = /System/Library/Frameworks/Kerberos.framework; sourceTree = "<absolute>"; };
-		76F6FAB00DABC5FC0058FB66 /* NSAdiumsoulPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSAdiumsoulPlugin.h; sourceTree = "<group>"; };
-		76F6FAB10DABC5FC0058FB66 /* NSAdiumsoulPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSAdiumsoulPlugin.m; sourceTree = "<group>"; };
-		76F6FADE0DABCC730058FB66 /* NSAdiumsoulService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSAdiumsoulService.h; sourceTree = "<group>"; };
-		76F6FADF0DABCC730058FB66 /* NSAdiumsoulService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSAdiumsoulService.m; sourceTree = "<group>"; };
-		76F6FB550DABD6640058FB66 /* NSAdiumsoulAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSAdiumsoulAccount.h; sourceTree = "<group>"; };
+		76F6FAB00DABC5FC0058FB66 /* ASPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASPlugin.h; sourceTree = "<group>"; };
+		76F6FAB10DABC5FC0058FB66 /* ASPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASPlugin.m; sourceTree = "<group>"; };
+		76F6FADE0DABCC730058FB66 /* ASService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASService.h; sourceTree = "<group>"; };
+		76F6FADF0DABCC730058FB66 /* ASService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASService.m; sourceTree = "<group>"; };
+		76F6FB550DABD6640058FB66 /* ASAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASAccount.h; sourceTree = "<group>"; };
 		76F6FC1D0DAC2EF10058FB66 /* NSPAdiumsoul.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSPAdiumsoul.h; sourceTree = "<group>"; };
 		76F6FC1E0DAC2EF10058FB66 /* NSPAdiumsoul.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSPAdiumsoul.m; sourceTree = "<group>"; };
 		76FE7D48104CD74C0067EBC0 /* ASKrbConfinstallController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASKrbConfinstallController.h; sourceTree = "<group>"; };
@@ -125,6 +124,7 @@
 		76FE7DC6104CE48C0067EBC0 /* RealmsConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RealmsConfiguration.m; sourceTree = "<group>"; };
 		76FE7DD3104CE4C20067EBC0 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = /System/Library/Frameworks/CoreFoundation.framework; sourceTree = "<absolute>"; };
 		76FE7DE1104CE5180067EBC0 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = /System/Library/Frameworks/Security.framework; sourceTree = "<absolute>"; };
+		76FE7EFD104CF7C30067EBC0 /* ASContactList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASContactList.h; sourceTree = "<group>"; };
 		8D5B49B6048680CD000E48DA /* AdiumSoul.AdiumPlugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdiumSoul.AdiumPlugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D5B49B7048680CD000E48DA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2F7E65807B2D6F200F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
@@ -193,12 +193,12 @@
 			children = (
 				76F6FBD10DABED320058FB66 /* Netsoul Protocol */,
 				76F00E120DB26ED6000933F4 /* Contacts */,
-				76F6FB550DABD6640058FB66 /* NSAdiumsoulAccount.h */,
-				76F00A970DB0FF15000933F4 /* NSAdiumsoulAccount.m */,
-				76F6FAB00DABC5FC0058FB66 /* NSAdiumsoulPlugin.h */,
-				76F6FAB10DABC5FC0058FB66 /* NSAdiumsoulPlugin.m */,
-				76F6FADE0DABCC730058FB66 /* NSAdiumsoulService.h */,
-				76F6FADF0DABCC730058FB66 /* NSAdiumsoulService.m */,
+				76F6FB550DABD6640058FB66 /* ASAccount.h */,
+				76F00A970DB0FF15000933F4 /* ASAccount.m */,
+				76F6FAB00DABC5FC0058FB66 /* ASPlugin.h */,
+				76F6FAB10DABC5FC0058FB66 /* ASPlugin.m */,
+				76F6FADE0DABCC730058FB66 /* ASService.h */,
+				76F6FADF0DABCC730058FB66 /* ASService.m */,
 				76CB59E00DE6199800DF379E /* Transfers */,
 				76F013290DB396B7000933F4 /* Kerberos Related */,
 				76974BB70DB9885200CAF3FE /* Interface */,
@@ -263,15 +263,15 @@
 		76974BB70DB9885200CAF3FE /* Interface */ = {
 			isa = PBXGroup;
 			children = (
-				76974BCA0DB9897700CAF3FE /* NSIAdiumsoulAccountView.xib */,
-				76974BCF0DB98B0A00CAF3FE /* NSIAdiumsoulAccountView.h */,
-				76974BD00DB98B0A00CAF3FE /* NSIAdiumsoulAccountView.m */,
-				76C2935B0DBACC7800C0058E /* NSIAdiumsoulLocation.xib */,
-				76C2935E0DBACC8500C0058E /* NSIAdiumsoulLocation.h */,
-				76C2935F0DBACC8500C0058E /* NSIAdiumsoulLocation.m */,
-				76C66D730DD739AD00330AAF /* NSIAdiumSoulSendFile.xib */,
-				76C66DB40DD7449400330AAF /* NSIAdiumSoulSendFile.h */,
-				76C66DB50DD7449400330AAF /* NSIAdiumSoulSendFile.m */,
+				76974BCA0DB9897700CAF3FE /* ASIAccountView.xib */,
+				76974BCF0DB98B0A00CAF3FE /* ASIAccountView.h */,
+				76974BD00DB98B0A00CAF3FE /* ASIAccountView.m */,
+				76C2935B0DBACC7800C0058E /* ASILocation.xib */,
+				76C2935E0DBACC8500C0058E /* ASILocation.h */,
+				76C2935F0DBACC8500C0058E /* ASILocation.m */,
+				76C66D730DD739AD00330AAF /* ASISendFile.xib */,
+				76C66DB40DD7449400330AAF /* ASISendFile.h */,
+				76C66DB50DD7449400330AAF /* ASISendFile.m */,
 			);
 			name = Interface;
 			sourceTree = "<group>";
@@ -279,12 +279,12 @@
 		76CB59E00DE6199800DF379E /* Transfers */ = {
 			isa = PBXGroup;
 			children = (
-				76CB59E20DE619DC00DF379E /* NSTransferManager.h */,
-				76CB59E30DE619DC00DF379E /* NSTransferManager.m */,
-				76CB59EC0DE61FBB00DF379E /* NSIncomingTransfer.h */,
-				76CB59ED0DE61FBB00DF379E /* NSIncomingTransfer.m */,
-				76CB59EF0DE61FCC00DF379E /* NSOutgoingTransfer.h */,
-				76CB59F00DE61FCC00DF379E /* NSOutgoingTransfer.m */,
+				76CB59E20DE619DC00DF379E /* ASTransferManager.h */,
+				76CB59E30DE619DC00DF379E /* ASTransferManager.m */,
+				76CB59EC0DE61FBB00DF379E /* ASIncomingTransfer.h */,
+				76CB59ED0DE61FBB00DF379E /* ASIncomingTransfer.m */,
+				76CB59EF0DE61FCC00DF379E /* ASOutgoingTransfer.h */,
+				76CB59F00DE61FCC00DF379E /* ASOutgoingTransfer.m */,
 			);
 			name = Transfers;
 			sourceTree = "<group>";
@@ -292,10 +292,10 @@
 		76F00E120DB26ED6000933F4 /* Contacts */ = {
 			isa = PBXGroup;
 			children = (
-				76F00E140DB26F05000933F4 /* NSAdiumsoulContactList.h */,
-				76F00E150DB26F05000933F4 /* NSAdiumsoulContactList.m */,
-				76F00E4D0DB2878B000933F4 /* NSAdiumsoulContact.h */,
-				76F00E4E0DB2878B000933F4 /* NSAdiumsoulContact.m */,
+				76FE7EFD104CF7C30067EBC0 /* ASContactList.h */,
+				76F00E150DB26F05000933F4 /* ASContactList.m */,
+				76F00E4D0DB2878B000933F4 /* ASContact.h */,
+				76F00E4E0DB2878B000933F4 /* ASContact.m */,
 			);
 			name = Contacts;
 			sourceTree = "<group>";
@@ -417,8 +417,8 @@
 				8D5B49B0048680CD000E48DA /* InfoPlist.strings in Resources */,
 				767D7DD60DB0274C0073C4C0 /* netsoullargeicon.tif in Resources */,
 				767D7DD70DB0274C0073C4C0 /* netsoulmediumicon.tif in Resources */,
-				76974BCB0DB9897700CAF3FE /* NSIAdiumsoulAccountView.xib in Resources */,
-				76C2935C0DBACC7800C0058E /* NSIAdiumsoulLocation.xib in Resources */,
+				76974BCB0DB9897700CAF3FE /* ASIAccountView.xib in Resources */,
+				76C2935C0DBACC7800C0058E /* ASILocation.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,18 +454,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76F6FAB20DABC5FC0058FB66 /* NSAdiumsoulPlugin.m in Sources */,
-				76F6FAE00DABCC730058FB66 /* NSAdiumsoulService.m in Sources */,
+				76F6FAB20DABC5FC0058FB66 /* ASPlugin.m in Sources */,
+				76F6FAE00DABCC730058FB66 /* ASService.m in Sources */,
 				76F6FC1F0DAC2EF10058FB66 /* NSPAdiumsoul.m in Sources */,
 				767B6B230DAF99A900A3A6FC /* NSPMessages.m in Sources */,
 				767D7BD00DAFECFA0073C4C0 /* NSPCUtilities.c in Sources */,
-				76F00A980DB0FF15000933F4 /* NSAdiumsoulAccount.m in Sources */,
-				76F00E160DB26F05000933F4 /* NSAdiumsoulContactList.m in Sources */,
-				76F00E4F0DB2878B000933F4 /* NSAdiumsoulContact.m in Sources */,
+				76F00A980DB0FF15000933F4 /* ASAccount.m in Sources */,
+				76F00E160DB26F05000933F4 /* ASContactList.m in Sources */,
+				76F00E4F0DB2878B000933F4 /* ASContact.m in Sources */,
 				76F0132F0DB39715000933F4 /* kerberos.lib.m in Sources */,
 				7604C0ED0DB3AF7000BBF615 /* NLXKrb.m in Sources */,
-				76974BD10DB98B0A00CAF3FE /* NSIAdiumsoulAccountView.m in Sources */,
-				76C293600DBACC8500C0058E /* NSIAdiumsoulLocation.m in Sources */,
+				76974BD10DB98B0A00CAF3FE /* ASIAccountView.m in Sources */,
+				76C293600DBACC8500C0058E /* ASILocation.m in Sources */,
 				764923B40DC21B2400CB3554 /* NSData+Base64.m in Sources */,
 				76FE7D4A104CD74C0067EBC0 /* ASKrbConfinstallController.m in Sources */,
 				76FE7DC7104CE48C0067EBC0 /* RealmsConfiguration.m in Sources */,

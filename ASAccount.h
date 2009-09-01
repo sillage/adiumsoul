@@ -1,5 +1,5 @@
 //
-//  NSAdiumsoulAccount.h
+//  ASAccount.h
 //  AdiumSoul
 //
 //  Created by Naixn on 08/04/08.
@@ -8,8 +8,8 @@
 #import <Adium/AIAccount.h>
 //#import <AIUtilities/AIWiredString.h>
 #import "NSPAdiumsoul.h"
-#import "NSAdiumsoulContactList.h"
-#import "NSIAdiumsoulLocation.h"
+#import "ASContactList.h"
+#import "ASILocation.h"
 
 
 #define NETSOUL_PHOTO_URL @"http://www.epitech.net/intra/photo.php?login="
@@ -29,16 +29,16 @@ enum
     NETSOUL_STEP_AUTHENTICATION
 };
 
-@interface NSAdiumsoulAccount : AIAccount
+@interface ASAccount : AIAccount
 {
     NSPAdiumsoul*           adiumsoul;
-    NSAdiumsoulContactList* netsoulContactList;
+    ASContactList* netsoulContactList;
     BOOL                    tryingToConnect;
     BOOL                    connected;
     NSTimer*                connectionTimer;
 
     // attributes for location window
-    NSIAdiumsoulLocation*   locationWindow;
+    ASILocation*   locationWindow;
     BOOL                    locationSet;
 }
 

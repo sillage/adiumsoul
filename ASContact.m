@@ -1,17 +1,17 @@
 //
-//  NSAdiumsoulContact.m
+//  ASContact.m
 //  AdiumSoul
 //
 //  Created by Naixn on 13/04/08.
 //  Copyright 2008 Epitech. All rights reserved.
 //
 
-#import "NSAdiumsoulContact.h"
+#import "ASContact.h"
 
 
 static NSMutableDictionary* gl_contactStates = nil;
 
-@implementation NSAdiumsoulContact
+@implementation ASContact
 
 - (id)initWithUID:(NSString *)uid
 {
@@ -123,7 +123,7 @@ static NSMutableDictionary* gl_contactStates = nil;
         
         while (socket = [en nextObject])
         {
-            tmpLevel = [NSAdiumsoulContact contactStateLevel:[[data objectForKey:socket] objectForKey:NETSOUL_CONTACT_STATE]];
+            tmpLevel = [ASContact contactStateLevel:[[data objectForKey:socket] objectForKey:NETSOUL_CONTACT_STATE]];
             if (tmpLevel >= higherStateLevel)
             {
                 higherStateLevel = tmpLevel;

@@ -1,5 +1,5 @@
 //
-//  NSTransferManager.h
+//  ASTransferManager.h
 //  AdiumSoul
 //
 //  Created by Naixn on 22/05/08.
@@ -10,21 +10,21 @@
 #import <Adium/ESFileTransfer.h>
 
 
-@class NSAdiumsoulAccount;
+@class ASAccount;
 
-@protocol NSTransferProtocol
+@protocol ASTransferProtocol
 + (void)createTransferWithData:(NSDictionary *)tData;
 - (void)cancel;
 @end
 
-@interface NSTransferManager : NSObject
+@interface ASTransferManager : NSObject
 {
     NSLock*                 dataLock;
     NSMutableDictionary*    transfers;
-    NSAdiumsoulAccount*     account;
+    ASAccount*     account;
 }
 
-- (id)initWithAccount:(NSAdiumsoulAccount *)inAccount;
+- (id)initWithAccount:(ASAccount *)inAccount;
 - (void)prepareOutgoingTransfer:(ESFileTransfer *)fileTransfer;
 - (void)prepareIncomingTransfer:(ESFileTransfer *)fileTransfer fromAddress:(NSString *)ipAddress andPort:(NSString *)port;
 - (void)setThreadedObject:(id)threadedObject forTransfer:(ESFileTransfer *)fileTransfer;
