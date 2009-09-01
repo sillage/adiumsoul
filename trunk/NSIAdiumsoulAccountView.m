@@ -8,6 +8,7 @@
 
 #import "NSIAdiumsoulAccountView.h"
 #import "NSPAdiumsoul.h"
+#import "kerberos.lib.h"
 
 #import <Adium/AIAccount.h>
 
@@ -24,6 +25,10 @@
         {
             macOsVersion = 0;
         }
+        [[NSNotificationCenter defaultCenter] addObserver:self
+                                                 selector:@selector(checkKrbConf)
+                                                     name:ASProfileInstallationDidFinishNotification
+                                                   object:nil];        
     }
     return self;
 }
@@ -71,6 +76,7 @@
         [checkBox_useKerberos setState:NSOnState];
         [self changedPreference:checkBox_useKerberos];
     }
+    [self checkKrbConf];
     // Student promotion
     if (macOsVersion < kAdiumSoulMinimumVersionForKerberos)
     {
@@ -145,13 +151,43 @@
 
 #pragma mark User interaction
 
+- (void)checkKrbConf
+{
+    if (macOsVersion < kAdiumSoulMinimumVersionForKerberos)
+    {
+        return ;
+    }
+    if ([checkBox_useKerberos state] == NSOffState || krb_configured_for_netsoul())
+    {
+        [label_kerberosStatus setHidden:YES];
+        [button_configureKerberos setHidden:YES];
+        [button_configureKerberos setEnabled:NO];
+    }
+    else
+    {
+        [label_kerberosStatus setHidden:NO];
+        [button_configureKerberos setHidden:NO];
+        [button_configureKerberos setEnabled:YES];
+    }
+}
+
 - (IBAction)changedPreference:(id)sender
 {
     if (macOsVersion >= kAdiumSoulMinimumVersionForKerberos && sender == checkBox_useKerberos)
     {
         [textField_studentPromo setEnabled:([checkBox_useKerberos state] == NSOnState ? YES : NO)];
-        [textField_passwordHelper setStringValue:([checkBox_useKerberos state] == NSOnState ? @"(UNIX Password)" : @"(SOCKS Password)")];
+        [label_passwordHelper setStringValue:([checkBox_useKerberos state] == NSOnState ? @"(UNIX Password)" : @"(SOCKS Password)")];
+        [self checkKrbConf];
     }
+}
+
+- (IBAction)installKerberosConfig:(id)sender
+{
+    [NSApp beginSheet:[confinstallController installationWindow]
+       modalForWindow:[sender window]
+        modalDelegate:confinstallController
+       didEndSelector:nil
+          contextInfo:nil];
 }
 
 @end
