@@ -53,11 +53,9 @@
 + (NSString *)kerberosAuthentication:(NSDictionary *)connectionValues
 {
     NSString*       returnString;
-    gss_ctx_id_t    ctx = GSS_C_NO_CONTEXT;
 
     Uchar*  tk = retrieve_token((char*)[[connectionValues objectForKey:@"login"] cStringUsingEncoding:NSUTF8StringEncoding],
-                                (char*)[[connectionValues objectForKey:@"password"] cStringUsingEncoding:NSUTF8StringEncoding],
-                                &ctx);
+                                (char*)[[connectionValues objectForKey:@"password"] cStringUsingEncoding:NSUTF8StringEncoding]);
     if (tk == NULL)
     {
         return nil;
