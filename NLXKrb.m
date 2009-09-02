@@ -21,7 +21,7 @@ extern krb_msgs	krb_all_msgs[];
 
 - (void)stringWithKrbError:(krb5_error_code)code
 {
-	int i;
+	int i = 0;
 
 	if (i == 0)
     {
