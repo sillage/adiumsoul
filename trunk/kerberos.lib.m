@@ -85,12 +85,11 @@ int                         get_new_tickets(krb5_context c, krb5_principal p, kr
 void                import_gss_name(gss_name_t *gss_name)
 {
     OM_uint32       min;
-    OM_uint32       maj;
     gss_buffer_desc buf;
     
     buf.value = (Uchar *)strdup(NETSOUL_SERVICE_NAME);
     buf.length = strlen(buf.value) + 1;
-    maj = gss_import_name(&min, &buf, GSS_C_NT_HOSTBASED_SERVICE, gss_name);
+    gss_import_name(&min, &buf, GSS_C_NT_HOSTBASED_SERVICE, gss_name);
 }
 
 Uchar*          get_token()

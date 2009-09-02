@@ -26,7 +26,7 @@
 
 //Service Properties
 - (NSCharacterSet *)allowedCharacters;
-- (int)allowedLength;
+- (NSUInteger)allowedLength;
 - (BOOL)caseSensitive;
 
 @end
