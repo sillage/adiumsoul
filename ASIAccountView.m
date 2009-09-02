@@ -12,8 +12,6 @@
 
 #import <Adium/AIAccount.h>
 
-#define kAdiumSoulMinimumVersionForKerberos 0x1060
-
 
 @implementation ASIAccountView
 
@@ -21,10 +19,6 @@
 {
     if (self = [super init])
     {
-        if (Gestalt(gestaltSystemVersion, &macOsVersion) != noErr)
-        {
-            macOsVersion = 0;
-        }
         [[NSNotificationCenter defaultCenter] addObserver:self
                                                  selector:@selector(checkKrbConf)
                                                      name:ASProfileInstallationDidFinishNotification
@@ -66,24 +60,14 @@
     // Port
     [textField_connectPort setStringValue:(connectPort ? connectPort : connectPortDefault)];
     // Use Kerberos
-    if (macOsVersion < kAdiumSoulMinimumVersionForKerberos)
-    {
-        [checkBox_useKerberos setState:NSOffState];
-        [checkBox_useKerberos setHidden:YES];
-    }
-    else if ([[account preferenceForKey:NETSOUL_KEY_KERBEROOS group:GROUP_ACCOUNT_STATUS] boolValue])
+    if ([[account preferenceForKey:NETSOUL_KEY_KERBEROOS group:GROUP_ACCOUNT_STATUS] boolValue])
     {
         [checkBox_useKerberos setState:NSOnState];
         [self changedPreference:checkBox_useKerberos];
     }
     [self checkKrbConf];
     // Student promotion
-    if (macOsVersion < kAdiumSoulMinimumVersionForKerberos)
-    {
-        [textField_studentPromo setHidden:YES];
-        [label_studentPromo setHidden:YES];
-    }
-    else if (studentPromo)
+    if (studentPromo)
     {
         [textField_studentPromo setStringValue:studentPromo];
     }
@@ -120,14 +104,11 @@
 {
     [super saveConfiguration];
 
-    if (macOsVersion >= kAdiumSoulMinimumVersionForKerberos)
-    {
-        // Student promo
-        NSString*   studentPromo = [textField_studentPromo stringValue];
-        [account setPreference:([studentPromo length] ? studentPromo : nil) forKey:NETSOUL_KEY_PROMO group:GROUP_ACCOUNT_STATUS];
-        // Use Kerberos
-        [account setPreference:[NSNumber numberWithBool:[checkBox_useKerberos state]] forKey:NETSOUL_KEY_KERBEROOS group:GROUP_ACCOUNT_STATUS];
-    }
+    // Student promo
+    NSString*   studentPromo = [textField_studentPromo stringValue];
+    [account setPreference:([studentPromo length] ? studentPromo : nil) forKey:NETSOUL_KEY_PROMO group:GROUP_ACCOUNT_STATUS];
+    // Use Kerberos
+    [account setPreference:[NSNumber numberWithBool:[checkBox_useKerberos state]] forKey:NETSOUL_KEY_KERBEROOS group:GROUP_ACCOUNT_STATUS];
     // Location
     NSString*   netsoulLocation = [textField_netsoulLocation stringValue];
     [account setPreference:([netsoulLocation length] ? netsoulLocation : nil) forKey:NETSOUL_KEY_LOCATION group:GROUP_ACCOUNT_STATUS];
@@ -153,10 +134,6 @@
 
 - (void)checkKrbConf
 {
-    if (macOsVersion < kAdiumSoulMinimumVersionForKerberos)
-    {
-        return ;
-    }
     if ([checkBox_useKerberos state] == NSOffState || krb_configured_for_netsoul())
     {
         [label_kerberosStatus setHidden:YES];
@@ -173,7 +150,7 @@
 
 - (IBAction)changedPreference:(id)sender
 {
-    if (macOsVersion >= kAdiumSoulMinimumVersionForKerberos && sender == checkBox_useKerberos)
+    if (sender == checkBox_useKerberos)
     {
         [textField_studentPromo setEnabled:([checkBox_useKerberos state] == NSOnState ? YES : NO)];
         [label_passwordHelper setStringValue:([checkBox_useKerberos state] == NSOnState ? @"(UNIX Password)" : @"(SOCKS Password)")];

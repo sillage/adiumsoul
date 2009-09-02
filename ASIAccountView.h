@@ -35,8 +35,6 @@
     IBOutlet    NSButton*       checkBox_reconnect;
     IBOutlet    NSStepper*      stepper_reconnectTime;
     IBOutlet    NSTextField*    textField_reconnectTime;
-
-    SInt32                      macOsVersion;
 }
 
 - (NSString *)nibName;

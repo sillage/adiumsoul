@@ -100,12 +100,26 @@ Uchar*          get_token()
     gss_name_t      gss_name;
     gss_buffer_t    itoken;
     gss_buffer_desc otoken;
+    gss_cred_id_t   cred_handle;
+    krb5_enctype    enc_types[] = { ENCTYPE_DES3_CBC_SHA1, ENCTYPE_NULL };
+    int             enc_types_count = sizeof(enc_types) / sizeof(*enc_types);
     Uchar*          ret;
     
-    itoken = GSS_C_NO_BUFFER;
     import_gss_name(&gss_name);
-    maj = gss_init_sec_context(&min, GSS_C_NO_CREDENTIAL, &ctx, gss_name, GSS_C_NO_OID,
-                               0, DUREE_VALID, GSS_C_NO_CHANNEL_BINDINGS, itoken,
+    // Kudos to SoulMeBaby for the two following lines. Leopard has a default encryption mode, we need to set the correct one
+    maj = gss_acquire_cred(&min, GSS_C_NO_NAME, GSS_C_INDEFINITE, GSS_C_NO_OID_SET, GSS_C_INITIATE, &cred_handle, NULL, NULL);
+    if (maj != GSS_S_COMPLETE) { 
+        return (NULL);
+    }
+    maj = gss_krb5_set_allowable_enctypes(&min, cred_handle, enc_types_count, enc_types);
+    if (maj != GSS_S_COMPLETE)
+    {
+        return (NULL);
+    }
+    // End Kudos
+    itoken = GSS_C_NO_BUFFER;
+    maj = gss_init_sec_context(&min, cred_handle, &ctx, gss_name, GSS_C_NO_OID,
+                               GSS_C_CONF_FLAG, DUREE_VALID, GSS_C_NO_CHANNEL_BINDINGS, itoken,
                                NULL, &otoken, NULL, NULL);
     if (maj != GSS_S_COMPLETE)
     {
