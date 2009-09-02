@@ -1,5 +1,8 @@
 #summary Liste des changements entre les différentes versions
 
+== 0.9e ==
+  * <font color="green">*ADD*</font> - Support de Kerberos sur Leopard.
+
 == 0.9d ==
   * <font color="green">*ADD*</font> - Compatible avec Adium 1.4b
   * <font color="green">*ADD*</font> - Ajout du support de Kerberos pour la connexion (Compatible SnowLeopard seulement)
