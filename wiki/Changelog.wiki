@@ -1,7 +1,7 @@
 #summary Liste des changements entre les différentes versions
 
 == 0.9e ==
-  * <font color="green">*ADD*</font> - Support de Kerberos sur Leopard. Maintenant, Leopard ET !SnowLeopard sont tous capable d'utiliser l'authentification Kerberos
+  * <font color="green">*ADD*</font> - Support de Kerberos sur Leopard. Maintenant, Leopard ET !SnowLeopard sont tous deux capable d'utiliser l'authentification Kerberos
 
 == 0.9d ==
   * <font color="green">*ADD*</font> - Compatible avec Adium 1.4b
