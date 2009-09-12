@@ -21,7 +21,7 @@
 	<key>CFBundleSignature</key>
 	<string>AdIM</string>
 	<key>CFBundleVersion</key>
-	<string>0.9e</string>
+	<string>0.9f</string>
 	<key>NSPrincipalClass</key>
 	<string>ASPlugin</string>
 </dict>

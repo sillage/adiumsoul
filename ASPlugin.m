@@ -28,12 +28,12 @@
 
 - (NSString *)pluginVersion
 {
-    return @"0.9e";
+    return @"0.9f";
 }
 
 - (NSString *)pluginDescription
 {
-    return @"AdiumSoul is an Adium plugin for the Netsoul protocol, used is IONIS' schools";
+    return @"AdiumSoul is an Adium plugin for the Netsoul protocol, used in IONIS' schools";
 }
 
 - (NSString *)pluginURL
