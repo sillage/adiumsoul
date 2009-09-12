@@ -1,0 +1,4 @@
+
+- Transferts via msg_user login_x ...
+ - Utilisation de NSStream, avec l'event NSStreamEventHasBytesAvailable et - (BOOL)hasBytesAvailable
+ 

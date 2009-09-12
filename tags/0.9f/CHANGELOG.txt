@@ -1,0 +1,32 @@
+
+*************************************
+******** Adiumsoul Changelog ********
+*************************************
+
+== 0.9d ==
+ADD - Compatible avec Adium 1.4b
+ADD - Rajoute le support de Kerberos pour la connexion (tout du moins avec SnowLeopard)
+DEL - N'est plus compatible avec les versions anterieures d'Adium.
+DEL - N'est plus compatible avec Mac OS X Tiger (10.4)
+
+== 0.9c ==
+ADD - Compatible avec Adium 1.3
+DEL - N'est plus compatible avec les versions anterieure d'adium. Utiliser la 0.9b pour ca
+
+== 0.9b ==
+ADD - Ajout d'une préférence "Display user's location as Status message"
+
+== 0.9a ==
+FIX - Le plugin ne freeze plus Adium quand le serveur netsoul ne repond pas
+ADD - Il est maintenant possible de gerer les groupes d'un contacts
+ADD - Gestion des status (online, idle, away)
+
+== 0.8d ==
+FIX - Correction des contacts qui disparaissent de la liste (meme de la liste offline) quand ils sont online puis offline
+FIX - Correction d'un bug lors de la reception de messages, c'est mal de bugguer, on se croit sur Windows apres
+
+== 0.8c ==
+ADD - Ajout de la compatibilité Tiger
+
+== 0.8b ==
+XXX - Premiere release publique
