@@ -1,5 +1,8 @@
 #summary Liste des changements entre les différentes versions
 
+== 0.9f ==
+  * <font color="blue">*FIX*</font> - En renomant les classes pour plsu de logique, j'ai oublié de rattacher la vue des options ... Cette version re-rajoute donc les options disparues (reconnection, "ask location on start", etc.)
+
 == 0.9e ==
   * <font color="green">*ADD*</font> - Support de Kerberos sur Leopard. Maintenant, Leopard ET !SnowLeopard sont tous deux capable d'utiliser l'authentification Kerberos
 
