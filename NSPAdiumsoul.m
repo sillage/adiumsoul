@@ -459,6 +459,8 @@ static NSMutableDictionary* gl_functions = nil;
     [self waitReplyToSendMessage:message withObject:obj orErrorMessage:nil];
 }
 
+#define NETSOUL_CMD_SUCCESS 2
+
 - (void)handleReply:(NSString *)message
 {
     if ([replyDataPool count] == 0)
@@ -467,7 +469,7 @@ static NSMutableDictionary* gl_functions = nil;
     NSMutableDictionary* data = [[replyDataPool objectAtIndex:0] retain];
     [replyDataPool removeObjectAtIndex:0];
     // Netsoul replies 2 when everything is OK, interesting isn't it?
-    if ([message intValue] == 2)
+    if ([message intValue] == NETSOUL_CMD_SUCCESS)
     {
         SEL selector = NSSelectorFromString([data objectForKey:@"selector"]);
         id obj = [data objectForKey:@"object"];
